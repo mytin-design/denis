@@ -525,7 +525,7 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
-        height: 50vh;
+        height: 35vh;
     }
 
     .my-img {
@@ -548,7 +548,7 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
-        height: 150vh;
+        height: 135vh;
     }
 
     .s-stats {
@@ -560,6 +560,7 @@ a {
     }
 
     .pf-s {
+        height: 70vh;
         overflow: scroll;
     }
 
@@ -620,6 +621,6 @@ a {
     }
 
     .p-ac {
-        height: 100vh; 
+        height: 70vh; 
     }
 }
