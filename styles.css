@@ -30,6 +30,14 @@ a {
     background-color: var(--dark-gray);
 }
 
+#moBtn {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    text-align: left;
+    font-family: inherit;
+}
+
 .cl-o {
     color: var(--orange);
 }
@@ -510,7 +518,12 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
+    }
 
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
     }
 
     .my-img {
