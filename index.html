@@ -1,0 +1,344 @@
+<!--Personal Portfolio-->
+<!doctype html>
+<html>
+    <head>
+        <title>King'ori Denis | Web Developer, Academic Writer, Lab Technologist</title>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="portfolio, developer, software, web, internet, blog, assignment help, homework help, study, professor, teacher, science, software, tech, works, jobs, designs, resume">
+        <meta name="description" content="Past completed projects & areas of expertise">
+        <meta http-equiv="X-UA-Compatible" content="IE-7">
+        <meta property="og:title" content="Denis Muthee King'ori | Web Developer, Academic Writer, Lab Technologist">
+        <meta property="og:image" content="./images/Denis-Profile-removebg-preview.png">
+        <meta property="og:image-height" content="300">
+        <meta property="og:image-width" content="300">
+        <link rel="icon" href="./images/Denis-Profile-removebg-preview.png" sizes="20x20">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/css/4.3.1/bootstrap.css.min">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+        
+
+    </head>
+    <body>
+        <header id="h-c" class="h-w dk-bk" >
+            <nav class="v-c">
+                <div class="x-t">
+                    <a href="./index.html" title="Home" class="x-title">DKing<span class="cl-o">.</span></a>
+                </div>
+
+                <div class="n-ls">
+                    <a href="./index.html" class="home-ln nv-ln">Home</a>
+                    <a href="#portFolio" class="portfolio-ln nv-ln">Portfolio</a>
+                    <a href="#blog" class="blog-ln nv-ln">Blog</a>
+                    <a href="#aboutMe" class="about-ln nv-ln">About Me</a>
+                    <a href="#contactMe" class="contact-ln nv-ln">Contact</a> <span class="v-line lt-grey">|</span>
+
+                    <div class="sm-ls">
+                        <a target="_blank" href="tel:0719444041" class="skype-ln sm-ln">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABW0lEQVQ4jc2SPy9DYRSHn/PeRm8rFklFJEwGgw9gkvAFbAaxqCA0KQZpme4kNRBpgojBJILP0MVksVhsFolINI0S0ittj0HJpf7k3op4kjc5b87vPMPJgf+OvPtls2FCD1EAwqbMeOrer9C8VbuOTejxEqQAUsDVIpuZ0eDC+6YWIObpCardwYVh8+R3+HvhZOoOKP6eUESBnKd3BeYguBAA3aoV11imn0TqvDHhdDoHnAI2VfF9MvVCEQUrDkTRyj6HTlNjQoCZhTNEl4BB8vYuqlI/9jVfh7cy6yizqO4Rc+MMOy9ntb3cQ0WGPMkLZhaPfhY6jqHNXgXmEHJgjWC0hUr1GOjwJBU33Mr8/O33wlc2MhMIWaBUe+11mXK1jeTSDXy2w48k0jtYphfk5FPZB3wtnM2VPkSnUB0A6arN54mUOhlzSv6FXtbWItiuTbn5kWTSDez5c54BJk1gYeOk9agAAAAASUVORK5CYII=">
+                        </a>
+                        <a target="_blank" href="https://web.facebook.com/denis.mytin.3/" class="fb-ln sm-ln">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAACYklEQVQ4jb2TP2hTURTGv3vzqhRDaYutbWyNtYipxU0FFxcj6ipdHERwLNKhYKXg8JaiFJx0ENShgouICI4ODlEc6p8KUsQqQoiNTW3SkNqY93K/49C+5OUlsQjimQ68j9875/7uBf5xqT9+tUUP7Vs7aAz3lAEoY5JfUh3zsBX/Cjj8MN/JUmiC5AUR6SEFpEBEQEraUGa0WNPJ0fbclsChB4XjIB6R0rUJ8MP8fUaIkfRYd6IpcBP2jJRtW8C83qFhfHk8kqgDbqypPzaarHO7wuUjrTjcY2FbCHjyqYSplwUvkyk7biw/Gc0BgOUB6YSukGy45s0TYRyLtFQ2iYS1L8NuhPQEgMnqhLboAwOFbw0EoKtVYfZ8BwDgztw67r5fR6FEZNYMROhll/LF/ghsRQ0AsejP4UYwUrB7R/WY738o4muuHISBlF1hnRwCAA0A1KavmQDLp63oeBDWZxX7K2doCJFA4OTeFtw73VZzpV5f7AIA3Jot4Orz1ZofG0KqUoxJiaAmIE3fArCQdevEiTKpGinR3myKlF4vEG4Bom0hHNpp4UZ8Y9Jzj38gvWbwecXFatH4NuKiYw/2AUr0BlDRUGb8K+d/EXPfHSxk3cpk88su3i6WAjABoGYAJRUpAKDFmiYlEzxsiFSAlAbiIEsO9HSF4zXJ0facECMi4vguLegDBsUJpCSuGoE9sFoHBID0WHeChnFSMv6rUQEGJhNXxctTgy/8jBogACyPRxJlx40ZynWIpP1ATwCAay5CsSCsarlZ2aLPxrJHz+y3TgEat1+tPH1zKfrOE/Bf6jfqoGfDhy3C+QAAAABJRU5ErkJggg==">
+                        </a>
+                        <a href="#" target="_blank" class="twitter-ln sm-ln"><img src="./gifs/icons8-whatsapp.gif" width="20" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="m-s">
+            <!--Main header section structure-->
+            <div id="aboutMe" class="m-h dk-bk">
+                <div class="m-h-info">
+                    <h1 class="d-n">Denis King'ori<span class="cl-o">.</span></h1>
+                    <hr width="20%" class="cl-o">
+
+                    <div class="ro-ls">
+                        <a target="_blank" href="https://www.instagram.com/denismytin/" class="ig-ln sm-m-ln">Instagram</a> <span class="v-line lt-grey">|</span>
+                    <a target="_blank" href="https://www.linkedin.com/in/denis-king-m/" class="ln-ln sm-m-ln">LinkedIn</a> <span class="v-line lt-grey">|</span>
+                    <a target="_blank" href="https://github.com/mytin-design" class="git-ln sm-m-ln">Github</a> <span class="v-line lt-grey">|</span>
+                    <a target="_blank" href="https://twitter.com/DenisMytin" class="drb-ln sm-m-ln">Twitter</a>
+                    </div>
+                    <div class="mh-btn">
+                    <a href="tel:0719444041" target="_blank" class="c-me upper cl-o">Contact Me</a>
+
+                    </div>
+                </div>
+
+                <div class="m-h-img">
+                    <img src="./images/Denis-Profile-removebg-preview.png" width="50" alt="User Profile" class="my-img">
+                </div>
+                <!--Make this as a carousel - where applicable-->
+                <div class="m-h-prof">
+                    <h4 class="u-p-t upper cl-o">INTRODUCTION</h4>
+                    <p class="u-ql">Web Developer, Academic Writer, Lab Technologist</p>
+                    <p class="u-d"> 3 years as a web developer. Expert in HTML, CSS, Bootstrap and Javascript. Over 9 years as an academic writer. Written at least 400 Disseratations and Thesis, and over 600 Essays, reflection papers, case studies, capstone projects and exams. Worked as an assistant medical research associate at Kenya Medical Research Institute and assistant Laboratory Technologist in Kenyatta University Health Unit.</p>
+                    <a href="#" class="u-lm-ln cl-o" onclick="showMore()">Learn more &DownArrow;</a>
+                </div>
+            </div>
+
+            <!--Services -->
+            <div class="m-s-s lt-bk">
+                <p class="ms-t upper cl-o">services</p>
+                <p class="ms-u-t">What I Am Great At</p>
+                <p class="ms-ds cl-gray">Web Development and Design, Medical research, Web research, Academic writing, name it.</p>
+               
+                <div class="s-bxs ds-flex">
+                    <div class="s-bx-m">
+                        <div class="s-bx">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAByklEQVRoge2WzUqbQRSGn9EvGlBMkAgxG8GShfECuszKS0gDgnXjPl34B0IKijtFL8BdQJRcghu77jopKHZRaAwY9Kso/sR03JQkQiZOTOJ8ofMsZ86Zed85h5kBi8ViMYlQTSQSiQHXCW4g5Bww/o6a6imAzATL1+lsNvvYKMBRZbq+kXWQy93TpkUExIrrGwFYbRTQp84Vn7ujqXWEEPOqOWUFqGubsYkHpuIuAsgdByj98gPwcfqGVLIIEnYOwnz/MVxN3lpbZCo6+WbR+dMzlja3AZCSsCquSQVqxOIu/qEKg0MVYvE/1fHUpyKhQJlQsMyX5PmLnHbEA8SiH7TitAx4GS0DueMAD7f93N/0k/8WrI7vHIQpuT4urhx2DyMvcvKnZ20Jy53o5Suv0ZnZBdmWgg5ztL/XUOv/0UJeRtlCRz/LnmqhmUmfbSFP0uwlrpIr/W17o+lQ7ax016vPUdHzFbAGTGMNmMYaMI01YJqeN6D1ldB50k3hXWWa9LwBI7/RTtLzFbAGTGMNmKbZLVQAItD5G6Tl9SS/VVPKlYQk09ouXaRPrUVZgct7Jz3qf0IK5vhXCQMUhCRzeed8NbS/xWKxvMIzFs9mEswjvwQAAAAASUVORK5CYII=">
+
+                            <div class="sb-ds">
+                                <span class="sb-w-ds">Web Development</span>
+                                <span class="sb-cw cl-gray">200 projects</span>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="s-bx">
+                                <img src="data:image/png;base64,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">
+                            <div class="sb-ds">
+                                <span class="sb-w-ds">Medical Research</span>
+                                <span class="sb-cw cl-gray">320 projects</span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="s-bx">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAB6UlEQVRoge2WzWpTQRiGn0lymp8aaUisNqZStAjppkVw5UbcuhEvItdk76I7l16CoAshFIumnIKmIRSSnpwz841LNb+DmHOymGf5Mbw8L/PDgMfj8Xg8Ho/HkxVqevD2yr62llMLD7MQWsIlis7Znnr/5zA3vUos7zZQHqCF5XR6OFMAaKUg86/sTw8KWVgAmEQY9iPGw4Q40pBTVKoBjWaFoJR3zsmkQDTS/OyN0LFgtGCMRbTh9iahH444aNeo1otOWfOO0FoxicyRF4y2GCPoSDj/2Gdyq53yUi8w7EcL5UVbjBbiSAi7N055qRcYD5Ol8kZbxAj9cOyUl/odiCO9Ut5oi44Tp7zUd4CcWilvtFDYclNLvUClGqyUF2OpPSg75aVeoNGsYJVdKm/ihCAZOeWlXiAo5Tlo1wC7UN5edOl+OOfi0/XKvPTvAFCtFzl6cZ/d/W0KW3msWIJSnr0nVQ6PKuigjNxr8uPbmMHV8tdo5jf6JrR2beaOfP8yZBCOSSaGZCI8fd6g0doG4Kyp/nLOZAdW8ai9w+OTOiqnELF8/TxYuHYjCwDcrRc5fFbnTq3I8cvmwnWZ/UZd2Nktc/Jq+XM6bwcu16PzX+hND2YLKDpsZomegk7WEh6Px+PxeDwez29+AQreSWf1P1G1AAAAAElFTkSuQmCC">
+
+                            <div class="sb-ds">
+                                <span class="sb-w-ds">Web Research</span>
+                                <span class="sb-cw cl-gray">500 projects</span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="s-bx">
+                            <img src="data:image/png;base64,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">
+
+                            <div class="sb-ds">
+                                <span class="sb-w-ds">Academic Writing</span>
+                                <span class="sb-cw cl-gray">1200 projects</span>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="s-stats ds-flex">
+                    <div class="stat-bx">
+                        <span class="stat-vl cl-o">9 &plus;</span>
+                        <span class="stat-ds cl-gray">Years of Experience</span>
+                    </div>
+
+                    <div class="stat-bx">
+                        <span class="stat-vl cl-o">200 &plus;</span>
+                        <span class="stat-ds cl-gray">Satisfied Customers</span>
+                    </div>
+
+                    <div class="stat-bx">
+                        <span class="stat-vl cl-o">769 &plus;</span>
+                        <span class="stat-ds cl-gray">Design Items</span>
+                    </div>
+
+                    <div class="stat-bx">
+                        <span class="stat-vl cl-o">124 &plus;</span>
+                        <span class="stat-ds cl-gray">Clients Served</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--Portfolio-->
+
+            <div id="portFolio" class="pf-s dk-bk">
+                <p class="ms-t upper cl-o">Portfolio</p>
+                <p class="ms-u-t">My Masterpiece Collection</p>
+                <p class="ms-ds cl-gray">Sample projects from past assignments</p>
+               
+                <div id="tabs" class="tab-s">
+                    <div class="tb-btns-bx">
+                        <p class="all-tb tb-bn" onclick="openMe(event, 'all')" id="dOpen">All</p>
+                        <p class="ux-tb tb-bn" onclick="openMe(event, 'uidesign')">Web Design</p>
+                        <p class="wd-tb tb-bn" onclick="openMe(event, 'webdev')">Medical Research</p>
+                        <p class="wr-tb tb-bn" onclick="openMe(event, 'webr')">Web Research</p>
+                        <p class="mr-tb tb-bn" onclick="openMe(event, 'sr')">Academic Writing</p>
+                    </div>
+
+                    <div id="all" class="m-top cc tb-ctn">
+                        <img src="./images/eller.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
+                        <img src="./images/med.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
+                        <img src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
+                        <img src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img">
+
+                    </div>
+
+                    <div class="tb-ctn" id="uidesign">
+                        <img src="./images/akk.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
+                        <img src="./images/church.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
+                        <img src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
+                        <img src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img">
+
+                    </div>
+
+                    <div class="tb-ctn" id="webdev">
+                        <img src="./images/akk.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
+                        <img src="./images/lab.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
+                        <img src="./images/med.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
+                        <img src="./images/KU REC LETTER.jpeg" width="50" alt="Portfolio work" id="pmj" class="p-img">
+
+                    </div>
+
+                    <div class="tb-ctn" id="webr">
+                        <img src="./images/eller.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
+                        <img src="./images/lab.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
+                        <img src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
+                        <img src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img">
+
+                    </div>
+
+                    <div class="tb-ctn" id="sr">
+                        <img src="./../../blog14.jpg" width="50" alt="Portfolio work" id="pmg" class="p-img">
+                        <img src="./../../blog12.jpg" width="50" alt="Portfolio work" id="pmh" class="p-img">
+                        <img src="./../../blog12.jpg" width="50" alt="Portfolio work" id="pmi" class="p-img">
+                        <img src="./../../blog12.jpg" width="50" alt="Portfolio work" id="pmj" class="p-img">
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Articles-->
+            <div id="blog" class="nws-s">
+                <p class="ms-t upper cl-o">latest News</p>
+                <p class="ms-u-t">MyLatest Articles</p>
+                <p class="ms-ds cl-gray">Web technology, software, medical and academic research.</p>
+               
+                <div class="art-bxs">
+                    <div class="art-bx">
+                        <p class="dt-pstd cl-o">08 Apr 2022</p>
+                        <img src="./images/shoe.png" width="50" alt="Article Image" class="art-img">
+                        <div class="art-info">
+                            <p class="art-t cl-o">HTML, CSS & Responsive Web Applications</p>
+                            <p class="art-ds lt-grey">Use HTML & CSS to create Responsive Sites</p>
+                            <a href="#" class="anchor rdm-ln cl-o">Read More &RightArrow;</a>
+                        </div>
+                    </div>
+
+                    <div class="art-bx">
+                        <p class="dt-pstd cl-o">09 Aug 2022</p>
+                        <img src="./images/eller.png" width="50" alt="Article Image" class="art-img">
+                        <div class="art-info">
+                            <p class="art-t cl-o">5 Reasons Why You should learn Computer Programming</p>
+                            <p class="art-ds lt-grey">9 out of 10 businesses need a tech expert to ...</p>
+                            <a href="#" class="anchor rdm-ln cl-o">Read More &RightArrow;</a>
+                        </div>
+                    </div>
+
+                    <!--small boxes-->
+                    <div class="art-sd-bx">
+                        <div class="art-sbx">
+                            <p class="dt-pstd-sd bn-blk cl-o">11 Nov 2022</p>
+                            <img src="./images/hostels.png" width="50" alt="Article Image" class="art-img-sd">
+                            <div class="art-info-sd">
+                                <a href="#" class="art-t-sd">CMS | Wordpress Websites</a>
+                                <p class="art-ds lt-grey">Wordpress websites creation. As simple as 123...</p>
+                            </div>
+                        </div>
+
+                        <div class="art-sbx">
+                            <p class="dt-pstd-sd bn-blk cl-o">11 Nov 2022</p>
+                            <img src="./images/church.png" width="50" alt="Article Image" class="art-img-sd">
+                            <div class="art-info-sd">
+                                <a href="#" class="art-t-sd">HTML5 | Structure at its core</a>
+                                <p class="art-ds lt-grey">The language that rests at ...</p>
+                            </div>
+                        </div>
+
+                        <div class="art-sbx">
+                            <p class="dt-pstd-sd bn-blk cl-o">11 Nov 2022</p>
+                            <img src="./images/akk.png" width="50" alt="Article Image" class="art-img-sd">
+                            <div class="art-info-sd">
+                                <a href="#" class="art-t-sd">Design corner | Styling Giants</a>
+                                <p class="art-ds lt-grey">Today, 9 out of 10 websites or applications use...</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </body>
+    <footer class="pfoo p-ac">
+        <p class="ms-t upper cl-o">Contact Us</p>
+        <p class="ms-u-t">Ways to Contact Me</p>
+        <p class="ms-ds cl-gray">Leave a message or call to get support right away.</p>
+       
+        <div id="contactMe" class="foo-c-bns p-ac">
+            <a title="Email" href="mailto:denismytin@gmail.com" class="pf-mail-ln c-ln cl-o">
+                <img width="20" src="data:image/png;base64,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">
+
+                <span class="ln-cnt">denismytin@gmail.com</span>
+            </a>
+
+            <a title="Call" href="tel:0719444041" target="_blank" class="ph-ln c-ln cl-o">
+                <img width="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABW0lEQVQ4jc2SPy9DYRSHn/PeRm8rFklFJEwGgw9gkvAFbAaxqCA0KQZpme4kNRBpgojBJILP0MVksVhsFolINI0S0ittj0HJpf7k3op4kjc5b87vPMPJgf+OvPtls2FCD1EAwqbMeOrer9C8VbuOTejxEqQAUsDVIpuZ0eDC+6YWIObpCardwYVh8+R3+HvhZOoOKP6eUESBnKd3BeYguBAA3aoV11imn0TqvDHhdDoHnAI2VfF9MvVCEQUrDkTRyj6HTlNjQoCZhTNEl4BB8vYuqlI/9jVfh7cy6yizqO4Rc+MMOy9ntb3cQ0WGPMkLZhaPfhY6jqHNXgXmEHJgjWC0hUr1GOjwJBU33Mr8/O33wlc2MhMIWaBUe+11mXK1jeTSDXy2w48k0jtYphfk5FPZB3wtnM2VPkSnUB0A6arN54mUOhlzSv6FXtbWItiuTbn5kWTSDez5c54BJk1gYeOk9agAAAAASUVORK5CYII=">
+                
+
+                <span class="ln-cnt">&plus;254719-444-041</span>
+            </a>
+
+            <a title="Skype" href="https://join.skype.com/invite/Gpwv93QtEgTa" target="_blank" class="skp-ln c-ln cl-o">
+                <img width="20" src="data:image/png;base64,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">
+
+                <span class="ln-cnt">Skype</span>
+            </a>
+
+            <a title="Dev.to" href="https://dev.to/mytindesign" target="_blank" class="fm-ln c-ln cl-o">
+                <img width="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAC+UlEQVRoge2YTUgUYRjHf+/MzroralqyteVHFAnSISSsWxRFkIe0kj4OHfoy+iAqqPy4dOlDhehkSZuHTlFaComHoEMQSJcgoi4eCrUtKdeS1JqPt4OkhTPm7K7Mwfmdlp3nfZ7/b96ZnWXAx2dhI9wuqIzLCiFpBQrSnGUAQU1nVPS4WRRwO2W28D9HJwDIyA4x9mUU45f577CgSmZ+tlPrAiZ7F7nJ41qAWc78u65XIGDVllJe3npmW7Px1Fayly1yalHoNkwyAo6UVpYBoGUGWVtdjqUb/xxXgwGyIjnpHJlegYzs0NTn6DrXJzMpXAv0nrg6HzmSRvE6QKr4Al7jC3iNL+A1voDX+AJe4wv8QZo6IWEgTd2pAmlMIPUxsAyHGvekRUCaOhUbVvP2fh07ylcjzZkBpfGLg9vL6I2dY0VeKG0SKQv8Cd9ad4Bwhsbm9WtA2oSTkpPVm1gZXcLjpmNpk0hJ4O/wWkCl+8UbGlq7EWpwRq1QNfbUtfEhPkzh0jw6m2soXBIGm91yQ9IC0tTZVraS27X7p8Ifb3yAKYIgbNoqKvHEBLtq7/IhPkxBJJdHjccozA+DNGfWz7cAlkHTmSqCWoDxnzr1LU8w0ezDT01T+ZgY4+yNdgAKIrlcPlqBZTjd+P8neQE1wN76NoYSo4QzNB5eO0x+ThCk5bzGMlieG+bm+WoABoZGuBzrQQnMvOTmStICQtHo+/Sd3ZdiDCVGKSmK0HH1EPlZAXsJyyCaG+Jx41GKo4sZGBph96UY/V/HZ9+1+RKAaYl99W0Mf/tBSVGE5tM7bZ8F0tTpuH6E4uhi+j8nqLpwZzK8oqYSIfWfUaFovBscYU9tjNd9gzTee2ofSii0tD/nffwruy7GGExMpBwekng3uqzyirT7Xlo60jQQagChaHYVkzsjrcnjDuE/dTW4ypS2F1tC0RyCT1XYPh9Sxf8z5zW+gNf4Al7jC3jNghQYSHuKafrdLnAvIKhJZtAc6BdSqZmHvj4+s/EbqK3tYwoPZWMAAAAASUVORK5CYII=">
+                <span class="ln-cnt">Devto</span>
+            </a>
+
+            <a title="Dribble" href="https://dribbble.com/mytin-design"  target="_blank" class="ig-ln c-ln cl-o">
+                <img width="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAEEUlEQVRoge2ZXWxURRTHf3cp3dZ2Kbr91JIKiIZiNaQFjImwBPpUCdTw4IMfgQfRFyP4YAwm2yaG+GITNfGF+KQYE2M0KRo1trSBgKCCtWADFW0xFqtggO3H7rLd8eHczXTbvdvu3L3hZf/JzZzpmZnz/9+duWdmCgUUUEABdxLWQg3U1s6dKPYDLUCZ95QAmATrB5TqsvrD3dkaZhWgQp1vAa/llVquUOqQ1d9x0MntKMB+8194wypXqB1WX8fRTB6fcx/2e8YnZ1gHnDxFWXo1u4676QE40Aalfvj0FHx0HJTRSC1OjmwCyo1CpVAZgPBuKC2W+t6tcGMKun8yGS3g5HCeQm6xa4Mmn8Jzm2FJfkN6J6C1Scpb03D0rNiVAXikIa9hvBFQtxyqK8T+fhiOXdC+phV5DeWNgNW12h68AhfHdH1ldV5DeSOgtkLbo9dgMiZTCaCmInMfQ3gjoGa5tsf+k/JaRMp73H3c5sIbAVWzvno37TcfjUvpX5rXUN4IKLE/n4kZeQBit6X0Z0s9ucMbAdY8A2bMUvBC8EZALCFlkU+/8TK/lJFoXkPlV0DREilT0wWgvETKu+2jRGQ6vyFdjxAogee3QGgdBMthOq5/AYCyEvmEphLbn9ddh5wNdwKC5fDeXsm8KZQWp++BlpXKNPLZ62HkX1ch58KdgIPtmnwkCpfGoD6YnqxW16T3uTzuKuRcmAtYv1IeEFKvfgg3p8Cy4NknYE9IfA/dqxdwUsHAqB5jTR3s2wb9Q6bbbBeLeNvD2n73ayEPoJQcXCZjUm+sh5ZVYl8aS1/EL7VC8yp4cbsxDXMB6+qlnIjC4Gi6L6lgYETshkq4y/4FTv+m29RUwKP21nr4b2Ma5gJS8/zyeOZj4qnh9HpSwTcDur6jWS/s7waNaZgLWGovn+jtzP7e8zAV0/WfR+DqDbHL/LDTPuZGotB7YX7/RcJcQGrO1zpsj6fispVOYSKqdxZ7QjrBfX4mXWiOMBeQOqQ0VMH9VfP9beth7X26vnmtHPKffhzaN8rfIlH47LQxBXAjoGfWvH19F1Qv0/XWJnilTeyZJMTtzLylEfZt13P/na/0QccQ5nmg71fY/Zi85Qfr4MjL8Pu4ZOEVQd3u/W/h4lV4ox1q7aSXVHC4B3rOuyIP2a4WQ50L73+DAXj7GZlG8wYAPuiFIyekXlwEm9bIYefcCPzxT25E+8IZubrbSlyPwAuH4amNEGqUN59IwtBf8PEJ+OWKbhtPwPEhV+EyIZuACRZzOxdPwCcn5fEKiltOriyL2PrRCy5mcOaS5XZadXnCxQQ+Zy6OAqz+cDdKHfKGUS5Qb1rHwl86eRf+F1Oo40n7fn4Dbm+sF48JlHUGn+rKRr6AAgoo4M7jfzC7DK3yAEoUAAAAAElFTkSuQmCC">
+                
+
+                <span class="ln-cnt">Dribble</span>
+            </a>
+        </div>
+
+        <a title="Top" href="#h-c" class="up-btn">&UpArrowBar;</a>
+        
+        <hr width="95%" class="cl-o">
+        <div class="c-bx">
+            <p class="cp-t">&copy;2022 Denis King'ori&centerdot; All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "href": "./policy.html"
+  }
+});
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23537574.js"></script>
+<!-- End of HubSpot Embed Code -->
+</html>
