@@ -509,7 +509,7 @@ a {
     .m-h{
         display: flex;
         flex-flow: column;
-        gap: .5pc;
+        gap: 1pc;
 
     }
 
@@ -527,12 +527,12 @@ a {
     .m-s-s {
         display: flex;
         flex-flow: column;
-        gap: .5pc;
+        gap: 1pc;
     }
     .s-bx-m {
         display: flex;
         flex-flow: column;
-        gap: .5pc;
+        gap: 1pc;
     }
 
     .s-stats {
