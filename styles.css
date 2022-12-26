@@ -495,6 +495,7 @@ a {
 }
 
 @media only screen and (max-width:500px) {
+    /* the heights used are specifically for iphone 6 */
     .v-c {
         display: flex;
         gap: 1pc;
@@ -524,6 +525,7 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
+        height: 50vh;
     }
 
     .my-img {
@@ -546,6 +548,7 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
+        height: 150vh;
     }
 
     .s-stats {
@@ -569,6 +572,7 @@ a {
         overflow-x: scroll;
         width: 50px;
     }
+
 
     .tb-bn {
         font-size: .8rem;
@@ -613,5 +617,9 @@ a {
         position: absolute;
         top: 250rem;
         left: 80%;
+    }
+
+    .p-ac {
+        height: 100vh; 
     }
 }
