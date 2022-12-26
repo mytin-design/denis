@@ -308,9 +308,7 @@ a {
 
 }
 
-.p-img:hover {
-    transform: scale(2);
-}
+
 /* articles */
 
 .nws-s {
@@ -441,6 +439,8 @@ a {
     
 }
 
+
+
 .up-btn {
     position: absolute;
     top: 340%;
@@ -509,6 +509,7 @@ a {
     .m-h{
         display: flex;
         flex-flow: column;
+        gap: .5pc;
 
     }
 
@@ -523,10 +524,15 @@ a {
     .v-line {
         display: none;
     }
-
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: .5pc;
+    }
     .s-bx-m {
         display: flex;
         flex-flow: column;
+        gap: .5pc;
     }
 
     .s-stats {
@@ -579,12 +585,15 @@ a {
         height: 100%;
         width: 5pc;
     
-    
     }
 
     .art-bxs {
         display: flex;
         flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
     }
 
     .up-btn  {
