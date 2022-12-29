@@ -1,16 +1,27 @@
 /*Policy styles */
-.main-head {
-    height: fit-content;
+body {
+    background-color: rgba(34, 34, 34, 0.966);
+
+}
+.body-head {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
 }
 
-#web-hero {
-    height: 32vh;
+.main-h-t {
+    font-size: 3rem;
+    color: white;
+    margin-left: 5pc;
 }
+
 
 .policy-holder {
     color: white;
     width: 70%;
     margin-left: 2pc;
+    padding: 1pc;
 }
 
 .policy-card {
@@ -58,27 +69,182 @@
 }
 
 
-@media only screen and (max-width: 996px) {
-    .main-head {
-        height: fit-content;
+    /* footer styles - suatomotives template*/
+    
+    
+    .foo-link-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+        padding: 1pc;
     }
     
-    #web-hero {
-        height: 20vh;
+    .address-box {
+        display: flex;
+        flex-flow: column;
+        gap: .5pc;
+    }
+    .x-logo-link {
+        font-size: 3rem;
+    }
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+        width: 10pc;
+        padding: .5pc;
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+        color: white; /* change in second theme */
+    
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    .sec-link:hover {
+        color: white;
+    }
+    
+    
+    
+    .address-box-img {
+        width: 20pc;
+        height: 5pc;
+    }
+    
+    .foo-loc-tag {
+        margin-top: 1pc;
+    }
+    
+    .ad-tag {
+        display: flex;
+        color: rgb(0, 162, 255);
+    }
+    
+    address {
+        padding-left: 1pc;
+        text-decoration: inherit;
+        color: white;
+    }
+    
+    
+    .crights-box  {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        color: white;
+    }
+
+@media only screen and (max-width: 996px) {
+    
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        background-color: inherit;
+        color: gray;
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: gray;
+        
+    }
+    .foo {
+        margin: 2pc;
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .main-head {
-        height: fit-content;
+    
+    .main-h-t {
+        font-size: 1.5rem;
     }
-    /* the title jumps to a new line therefore we need to increase height */
-    #web-hero {
-        height: 40vh;
-    }
-
     .policy-card, .policy-text {
         width: 100%;
         border: .1pc solid transparent;
+    }
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        background-color: inherit;
+        color: gray;
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: gray;
+        
+    }
+    .foo {
+        margin: 2pc;
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
     }
 }

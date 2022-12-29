@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
+
 }
 
 :root {
@@ -16,18 +18,18 @@
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: #000;
 }
 
 .lt-grey, .cl-gray {
-    color: var(--light-text);
+    color: #000;
 }
 
 .lt-bk {
-    background-color: var(--light-grey);
+    background-color: #000;
 }
 .h-w {
-    background-color: var(--dark-gray);
+    background-color: #fff;
 }
 
 #moBtn {
@@ -39,7 +41,7 @@ a {
 }
 
 .cl-o {
-    color: var(--orange);
+    color: navy;
 }
 
 .upper {
@@ -47,10 +49,13 @@ a {
 }
 
 .v-c {
+    margin: 0 auto;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1pc 5pc 1pc 1pc;
+    padding: 1pc 1pc 1pc 1pc;
+
 }
 
 
@@ -60,6 +65,10 @@ a {
 .x-title {
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+.nv-ln:hover {
+    color: #000;
 }
 
 .n-ls {
@@ -73,13 +82,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 15%;
+    width: 20%;
+}
+
+.sidepanel, .openBtn {
+    display: none;
 }
 
 
 
 .m-s {
-    background-color: var(--dark-gray);
+    background-color: #fff;
 }
 
 .m-h {
@@ -107,12 +120,16 @@ a {
 }
 
 .d-n {
-    color: var(--white);
+    color: #000;
 }
 
 .sm-m-ln {
-    color: var(--light-text);
+    color: navy;
     font-size: .8rem;
+}
+
+.sm-m-ln:hover {
+    color: #000;
 }
 
 .mh-btn {
@@ -126,10 +143,15 @@ a {
 .c-me {
     padding: .5pc;
     background-color: transparent;
-    border: .1pc solid var(--orange);
-    color: var(--orange);
+    border: .1pc solid navy;
+    color: navy;
     text-align: center;
     width: 90%;
+}
+
+.c-me:hover {
+   border: .1pc solid black;
+    color: black; 
 }
 
 
@@ -161,27 +183,34 @@ a {
 
 .u-ql {
     font-weight: bolder;
-    color: var(--white);
+    color: #000;
     font-size: 1.5rem;
 }
 
 .u-d {
-    color: var(--light-text);
+    color: var(--dark-gray);
+}
+
+.u-lm-ln:hover {
+    color: blue;
+}
+
+.rmo {
+    font-weight: bold;
 }
 
 
 /* my services */
 
 .m-s-s {
-    background-color: var(--light-grey);
+    background-color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2pc;
+    padding: 1pc;
     gap: 1pc;
-    color: var(--white);
 }
 
 .ms-t {
@@ -206,13 +235,18 @@ a {
 }
 
 .s-bx {
-    background-color: var(--dark-gray);
+    background-color: #fff;
     padding: 1pc;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
     gap: 1pc;
+    box-shadow: 0pc 0pc 0.666pc 0.1pc #eee;
+}
+
+.s-bx:hover {
+    cursor: default;
 }
 
 .sb-ds {
@@ -246,45 +280,50 @@ a {
 
 /* portfolio */
 
-.pf-s {
+.pf-s, .tab-s {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: var(--white);
+    color: #000;
     gap: 1pc;
-    padding: 1pc;
+    padding: .5pc;
+    background-color: #fff;
 }
 
+.tab-s {
+    width: 90%;
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+}
 
 
 .tb-btns-bx {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 50%;
 }
 
 .tb-bn {
-    color: var(--light-text);
+    color: #000;
     cursor: default;
 }
 
 .tb-bn:hover {
     text-decoration: underline;
-    color: var(--orange);
+    color: navy;
 }
 
 .tb-ctn {
-    margin-top: 3pc;
+    margin: 3pc auto;
     display: grid;
     grid-template-areas: 
     "ltop mid rside"
     "llow mid rside";
     grid-template-rows: auto;
     gap: 1pc;
-
+    width: 90%;
 }
 
 
@@ -292,44 +331,45 @@ a {
 #pmg {
     grid-area: ltop;
     height: 100%;
-    width: 200px;
+    width: 300px;
 
 }
 
 #pmh {
     grid-area: llow;
     height: 100%;
-    width: 200px;
+    width: 300px;
 }
 
 #pmi {
     grid-area: mid;
     height: 100%;
-    width: 300px;
+    width: 400px;
 }
 
 #pmj {
     grid-area: rside;
     height: 100%;
-    width: 170px;
-
-
+    width: 320px;
 }
 
+.p-img {
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+
+}
 
 /* articles */
 
 .nws-s {
-    margin-top: 3pc;
     text-align: center;
-    color: var(--white);
+    color: #000;
     display: flex;
     flex-direction: column;
     gap: 1pc;
     padding: 1pc;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-grey);
+    background-color: #fff;
 }
 
 
@@ -341,13 +381,15 @@ a {
     grid-template-rows: auto;
     gap: 1pc;
     padding: 1pc;
+
 }
 
 .art-bx {
     display: flex;
     flex-flow: column;
     text-align: start;
-    background-color: var(--dark-gray);
+    background-color: #fff;
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
 }
 
 .art-img{
@@ -366,7 +408,7 @@ a {
     position: absolute;
     padding: .5pc;
     font-size: .6rem;
-    background-color: #000;
+    background-color: #fff;
 }
 
 
@@ -380,7 +422,9 @@ a {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     gap: 1pc;
-    background-color: var(--dark-gray);
+    background-color: #fff;
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+
 }
 
 .art-img-sd {
@@ -392,7 +436,7 @@ a {
     position: absolute;
     padding: .3pc;
     font-size: .4rem;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .art-sbx > * {
@@ -404,11 +448,26 @@ a {
     position: absolute;
     padding: .3pc;
     font-size: .6rem;
-    background-color: #000;
+    background-color: #eee;
 }
 
 .art-info-sd {
     padding: .5pc;
+}
+.art-t {
+    color: black;
+    font-weight: bold;
+}
+
+.art-t-sd {
+    font-weight: bold;
+}
+.art-t-sd:hover {
+    color: #000;
+}
+
+.rdm-ln:hover {
+    color: gold;
 }
 
 
@@ -422,8 +481,8 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 1pc;
-    background-color: var(--dark-gray);
-    color: var(--white);
+    background-color: #fff;
+    color: #000;
 }
 
 .foo-c-bns {
@@ -442,28 +501,44 @@ a {
     align-items: center;
     gap: 1pc;
     font-size: .8rem;
-    background-color: var(--light-grey);
+    background-color: #fff;
     padding: .5pc;
+    box-shadow: 0pc 0pc 0.666pc 0.1pc #eee;
     
+}
+
+.c-ln:hover {
+    color: black;
 }
 
 
 
 .up-btn {
     position: absolute;
-    top: 340%;
+    top: 150pc;
     left: 90%;
     height: 2.5pc;
     width: 2.5pc;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .1pc solid var(--orange);
-    color: var(--orange);
+    border: .1pc solid blue;
+    color: blue;
 }
 
+.up-btn:hover {
+    color: navy;
+    border-color: navy;
+}
 
 @media only screen and (max-width: 996px) {
+    .v-c {
+        width: 100%;
+    }
+    .c-me {
+    
+    width: 100%;
+}
     .sm-ls {
         width: 30%;
     }
@@ -483,6 +558,57 @@ a {
         height: 20vh;
     }
 
+    .tb-btns-bx {
+        width: 70%;
+    }
+
+
+    .tb-bn {
+        font-size: .9rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 70%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+
     .art-bxs {
         width: 90%;
         
@@ -492,23 +618,88 @@ a {
         width: 60%;
     }
 
+    .up-btn  {
+        position: absolute;
+        top: 240pc;
+        left: 85%;
+    }
+
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:600px) {
     /* the heights used are specifically for iphone 6 */
     .v-c {
+        width: 100%;
         display: flex;
         gap: 1pc;
         padding: .5pc;
     }
     .n-ls {
-        width: 100%;
-        text-align: center;
+        display: none;
     }
-    .sm-ls {
+
+    #sidePanel {
+        height: 100%;
+        width: 0; /* show contents by changing width */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.815);
+        overflow: hidden;
+        padding-top: 3pc;
+        transition: .5s;
+        display: block;
+    }
+
+    .sidepanel a {
+        padding: .3pc .3pc .3pc 2.2pc;
+        text-decoration: none;
+        font-size: 1pc;
+        color: white;
+        display: block;
+        transition: .3s;
+    }
+
+    .sidepanel button {
+        margin: .3pc .3pc .3pc 2.2pc;
+
+    }
+
+    .sidepanel a:hover {
+        color: var(--light-text);
+    }
+
+    .sidepanel .closebtn {
         position: absolute;
-        top: 8%;
-        left: 65%;
+        top: 0;
+        left: 10pc;
+        font-size: 2pc;
+    }
+
+    .openBtn {
+        font-size: 1.2pc;
+        cursor: pointer;
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: inline;
+    }
+
+    .openBtn:hover {
+        color: white;
+    }
+
+    .sm-ls {
+        padding-left: 2.5pc;
+        width: 40%;
+    }
+
+    
+
+    .c-me {
+        width: 60%;
     }
 
     .m-s {
@@ -525,7 +716,6 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
-        height: 35vh;
     }
 
     .my-img {
@@ -548,7 +738,6 @@ a {
         display: flex;
         flex-flow: column;
         gap: 1pc;
-        height: 135vh;
     }
 
     .s-stats {
@@ -559,49 +748,181 @@ a {
         font-size: .8rem;
     }
 
-    .pf-s {
-        height: 70vh;
-        overflow: scroll;
-    }
-
-    #all {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 1fr 2fr 1fr;
-    }
-    .tb-btns {
-        overflow-x: scroll;
-        width: 50px;
+    .tb-btns-bx {
+        width: 100%;
     }
 
 
     .tb-bn {
-        font-size: .8rem;
+        font-size: .6rem;
     }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
 
+.tab-s {
+    width: 100%;
+}
     #pmg {
         grid-area: ltop;
         height: 100%;
-        width: 5pc;
+        width: 100%;
     
     }
     
     #pmh {
         grid-area: llow;
         height: 100%;
-        width: 5pc;
+        width: 100%;
     }
     
     #pmi {
         grid-area: mid;
         height: 100%;
-        width: 10pc;
+        width: 100%;
     }
     
     #pmj {
         grid-area: rside;
         height: 100%;
-        width: 5pc;
+        width: 100%;
+    
+    }
+
+
+    .art-bxs {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 290pc;
+        left: 80%;
+    }
+
+    
+}
+
+@media only screen and (max-device-width:320px) {
+    /* the heights used are specifically for iphone 6 */
+    .v-c {
+        width: 100%;
+        display: flex;
+        gap: 1pc;
+        padding: .5pc;
+    }
+    
+
+
+    .m-s {
+        padding-top: 3pc;
+    }
+
+    .m-h{
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .my-img {
+        position: unset;
+        height: 10pc;
+        width: 10pc;
+        border-radius: 100%;
+    }
+
+
+    .v-line {
+        display: none;
+    }
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+    .s-bx-m {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .s-stats {
+        width: 100%;
+    }
+
+    .stat-vl, .stat-ds {
+        font-size: .8rem;
+    }
+
+
+
+    .tb-btns-bx {
+        width: 100%;
+    }
+
+
+    .tb-bn {
+        font-size: .6rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
     
     }
 
@@ -616,11 +937,9 @@ a {
 
     .up-btn  {
         position: absolute;
-        top: 250rem;
+        top: 290pc;
         left: 80%;
     }
 
-    .p-ac {
-        height: 70vh; 
-    }
+
 }

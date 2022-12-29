@@ -1,0 +1,925 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+
+:root {
+    --dark-gray: rgba(34, 34, 34, 0.966);
+    --light-grey: #333;
+    --light-text: #999;
+    --orange: orange;
+    --white: white;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.lt-grey, .cl-gray {
+    color: var(--light-text);
+}
+
+.lt-bk {
+    background-color: var(--light-grey);
+}
+.h-w {
+    background-color: var(--dark-gray);
+}
+
+#moBtn {
+    background-color: transparent;
+    border: none;
+    font-size: large;
+    text-align: left;
+    font-family: inherit;
+}
+
+.cl-o {
+    color: var(--orange);
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.v-c {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1pc 1pc 1pc 1pc;
+
+}
+
+
+.v-c .n-ls a {
+    font-size: .8rem;
+}
+.x-title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.nv-ln:hover {
+    color: var(--light-text);
+}
+
+.n-ls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.sm-ls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.sidepanel, .openBtn {
+    display: none;
+}
+
+
+
+.m-s {
+    background-color: var(--dark-gray);
+}
+
+.m-h {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1pc;
+    display: grid;
+    grid-template-columns: 1.5fr 5fr 3fr;
+    grid-template-rows: 15pc auto 10pc;
+    gap: 1pc;
+    height: 70vh;
+}
+
+.m-h > * {
+    padding: 1pc;
+}
+
+.m-h-info {
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-flow: column;
+    gap: 1pc;
+}
+
+.d-n {
+    color: var(--white);
+}
+
+.sm-m-ln {
+    color: var(--light-text);
+    font-size: .8rem;
+}
+
+.sm-m-ln:hover {
+    color: white;
+}
+
+.mh-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.c-me {
+    padding: .5pc;
+    background-color: transparent;
+    border: .1pc solid var(--orange);
+    color: var(--orange);
+    text-align: center;
+    width: 90%;
+}
+
+.c-me:hover {
+   border: .1pc solid gold;
+    color: gold; 
+}
+
+
+.m-h-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.my-img {
+    position: absolute;
+    top: 25%;
+    width: 20pc;
+    height: 20pc;
+    border-radius: 110%;
+    filter: saturate(150%);
+}
+
+
+.m-h-prof {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+}
+.u-p-t {
+    font-size: .6rem;
+}
+
+.u-ql {
+    font-weight: bolder;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.u-d {
+    color: var(--light-text);
+}
+
+.u-lm-ln:hover {
+    color: gold;
+}
+
+
+/* my services */
+
+.m-s-s {
+    background-color: var(--light-grey);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1pc;
+    gap: 1pc;
+    color: var(--white);
+}
+
+.ms-t {
+    font-size: .7rem;
+}
+
+.ms-u-t {
+    font-size: 1.5rem;
+    
+}
+
+.ms-ds {
+    color: var(--light-text);
+}
+
+
+.s-bx-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1pc;
+}
+
+.s-bx {
+    background-color: var(--dark-gray);
+    padding: 1pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+}
+
+.s-bx:hover {
+    background-color: rgba(34, 34, 34, 0.766);
+    cursor: default;
+}
+
+.sb-ds {
+    padding: 1pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+}
+
+
+.s-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.stat-bx {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+}
+
+.stat-vl {
+    font-size: 1.5rem;
+}
+
+/* portfolio */
+
+.pf-s, .tab-s {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--white);
+    gap: 1pc;
+    padding: .5pc;
+    background-color: var(--dark-gray);
+}
+
+.tab-s {
+    width: 90%;
+}
+
+
+.tb-btns-bx {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.tb-bn {
+    color: var(--light-text);
+    cursor: default;
+}
+
+.tb-bn:hover {
+    text-decoration: underline;
+    color: var(--orange);
+}
+
+.tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop mid rside"
+    "llow mid rside";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+
+
+#pmg {
+    grid-area: ltop;
+    height: 100%;
+    width: 300px;
+
+}
+
+#pmh {
+    grid-area: llow;
+    height: 100%;
+    width: 300px;
+}
+
+#pmi {
+    grid-area: mid;
+    height: 100%;
+    width: 400px;
+}
+
+#pmj {
+    grid-area: rside;
+    height: 100%;
+    width: 320px;
+}
+
+
+/* articles */
+
+.nws-s {
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    padding: 1pc;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grey);
+}
+
+
+.art-bxs {
+    margin: 2pc auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 1pc;
+    padding: 1pc;
+}
+
+.art-bx {
+    display: flex;
+    flex-flow: column;
+    text-align: start;
+    background-color: var(--dark-gray);
+}
+
+.art-img{
+    width: 100%;
+    height: 10pc;
+}
+
+.art-info {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    padding: 1pc;
+}
+
+.dt-pstd {
+    position: absolute;
+    padding: .5pc;
+    font-size: .6rem;
+    background-color: #000;
+}
+
+
+.art-sd-bx {
+    display: flex;
+    flex-direction: column;
+    gap: .5pc;
+}
+.art-sbx {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 1pc;
+    background-color: var(--dark-gray);
+}
+
+.art-img-sd {
+    height: 5pc;
+    width: 5pc;
+}
+
+.dt-pstd-sd {
+    position: absolute;
+    padding: .3pc;
+    font-size: .4rem;
+    background-color: #000;
+}
+
+.art-sbx > * {
+    font-size: .8rem;
+    text-align: start;
+}
+
+.dt-pstd-sd {
+    position: absolute;
+    padding: .3pc;
+    font-size: .6rem;
+    background-color: #000;
+}
+
+.art-info-sd {
+    padding: .5pc;
+}
+
+.art-t-sd:hover {
+    color: var(--light-text);
+}
+
+.rdm-ln:hover {
+    color: gold;
+}
+
+
+
+/*footer */
+
+.pfoo {
+    text-align: center;
+    padding: 1pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1pc;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+.foo-c-bns {
+    margin: 1pc auto;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1pc;
+}
+
+
+.c-ln {
+    display: flex;
+    align-items: center;
+    gap: 1pc;
+    font-size: .8rem;
+    background-color: var(--light-grey);
+    padding: .5pc;
+    
+}
+
+.c-ln:hover {
+    background-color: rgba(15, 14, 14, 0.26);
+    color: gold;
+}
+
+
+
+.up-btn {
+    position: absolute;
+    top: 150pc;
+    left: 90%;
+    height: 2.5pc;
+    width: 2.5pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .1pc solid var(--orange);
+    color: var(--orange);
+}
+
+.up-btn:hover {
+    color: gold;
+    border-color: gold;
+}
+
+@media only screen and (max-width: 996px) {
+    .v-c {
+        width: 100%;
+    }
+    .c-me {
+    
+    width: 100%;
+}
+    .sm-ls {
+        width: 30%;
+    }
+    
+    .m-h {
+       
+        display: grid;
+        grid-template-columns: 1.5fr 4fr 4fr;
+        grid-template-rows: 15pc auto 10pc;
+        height: auto;
+    }
+    
+    .my-img {
+        position: absolute;
+        top: 20%;
+        width: 15pc;
+        height: 20vh;
+    }
+
+    .tb-btns-bx {
+        width: 70%;
+    }
+
+
+    .tb-bn {
+        font-size: .9rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 70%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+
+    .art-bxs {
+        width: 90%;
+        
+    }
+
+    .foo-c-bns {
+        width: 60%;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 240pc;
+        left: 85%;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+    /* the heights used are specifically for iphone 6 */
+    .v-c {
+        width: 100%;
+        display: flex;
+        gap: 1pc;
+        padding: .5pc;
+    }
+    .n-ls {
+        display: none;
+    }
+
+    #sidePanel {
+        height: 100%;
+        width: 0; /* show contents by changing width */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.815);
+        overflow: hidden;
+        padding-top: 3pc;
+        transition: .5s;
+        display: block;
+    }
+
+    .sidepanel a {
+        padding: .3pc .3pc .3pc 2.2pc;
+        text-decoration: none;
+        font-size: 1pc;
+        color: white;
+        display: block;
+        transition: .3s;
+    }
+
+    .sidepanel a:hover {
+        color: var(--light-text);
+    }
+
+    .sidepanel button {
+        margin: .3pc .3pc .3pc 2.2pc;
+
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        left: 10pc;
+        font-size: 2pc;
+    }
+
+    .openBtn {
+        font-size: 1.2pc;
+        cursor: pointer;
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: inline;
+    }
+
+    .openBtn:hover {
+        color: white;
+    }
+
+    .sm-ls {
+        padding-left: 2.5pc;
+        width: 40%;
+    }
+
+    
+
+    .c-me {
+        width: 60%;
+    }
+
+    .m-s {
+        padding-top: 3pc;
+    }
+
+    .m-h{
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .my-img {
+        position: unset;
+        height: 10pc;
+        width: 10pc;
+        border-radius: 100%;
+    }
+
+
+    .v-line {
+        display: none;
+    }
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+    .s-bx-m {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .s-stats {
+        width: 100%;
+    }
+
+    .stat-vl, .stat-ds {
+        font-size: .8rem;
+    }
+
+    .tb-btns-bx {
+        width: 100%;
+    }
+
+
+    .tb-bn {
+        font-size: .6rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+
+    .art-bxs {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 290pc;
+        left: 80%;
+    }
+
+    
+}
+
+@media only screen and (max-device-width:320px) {
+    /* the heights used are specifically for iphone 6 */
+    .v-c {
+        width: 100%;
+        display: flex;
+        gap: 1pc;
+        padding: .5pc;
+    }
+    
+
+
+    .m-s {
+        padding-top: 3pc;
+    }
+
+    .m-h{
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .my-img {
+        position: unset;
+        height: 10pc;
+        width: 10pc;
+        border-radius: 100%;
+    }
+
+
+    .v-line {
+        display: none;
+    }
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+    .s-bx-m {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .s-stats {
+        width: 100%;
+    }
+
+    .stat-vl, .stat-ds {
+        font-size: .8rem;
+    }
+
+
+
+    .tb-btns-bx {
+        width: 100%;
+    }
+
+
+    .tb-bn {
+        font-size: .6rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+    .art-bxs {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 290pc;
+        left: 80%;
+    }
+
+
+}

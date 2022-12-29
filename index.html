@@ -10,30 +10,40 @@
         <meta name="description" content="Past completed projects & areas of expertise">
         <meta http-equiv="X-UA-Compatible" content="IE-7">
         <meta property="og:title" content="Denis Muthee King'ori | Web Developer, Academic Writer, Lab Technologist">
-        <meta property="og:image" content="./images/Denis-Profile-removebg-preview.png">
+        <meta property="og:image" content=" ./images/Denis-Profile-removebg-preview.png">
         <meta property="og:image-height" content="300">
         <meta property="og:image-width" content="300">
+        <link id="styles" rel="stylesheet" href="./styles-dark.css">
+        <link class="link2" rel="stylesheet" href="./policy-dark.css">
         <link rel="icon" href="./images/Denis-Profile-removebg-preview.png" sizes="20x20">
-        <link rel="stylesheet" href="./styles.css">
-        <link rel="stylesheet" href="./policy-dark.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/css/4.3.1/bootstrap.css.min">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-        
-
     </head>
     <body>
-        <header id="h-c" class="h-w dk-bk" >
+        <header id="h-c" class="h-w dk-bk">
             <nav class="v-c">
                 <div class="x-t">
                     <a href="./index.html" title="Home" class="x-title">DKing<span class="cl-o">.</span></a>
                 </div>
 
+                <!--@media <= 500 the n-ls should be a humburger menu-->
                 <div class="n-ls">
                     <a href="./index.html" class="home-ln nv-ln">Home</a>
                     <a href="#portFolio" class="portfolio-ln nv-ln">Portfolio</a>
                     <a href="#blog" class="blog-ln nv-ln">Blog</a>
                     <a href="#aboutMe" class="about-ln nv-ln">About Me</a>
                     <a href="#contactMe" class="contact-ln nv-ln">Contact</a> <span class="v-line lt-grey">|</span>
+                    <button id="themeId" onclick="turnLight()">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg id="nightTheme" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <image width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAABK9JREFUeJztne1x2zgQQF9u7n/UQdBBdBWEHZw6CEtwB2EHSQdmB/ZVYF4FUioQU4HUge8HpZFOSYwltEusKLwZjDWmzSdi8UlCEBQKhUKhUCgU9HmX+w0YsQTeAxUQDomL10f6Qzp/3QE/zn4/GXMJyBL4xBCAClgonXfPEJwO+IcMAbolAvAF2AKvE6XtwRnMr+6G+Ay8MF0QfpeeDu/lbvnMtLVBml4sL9ojK3wG4jw1VhfviYCPpkmStjZZ4Icv5M/ksUmFP7VOpERg6CyXCuf6Dmw4zSvg/3OOI9WZOwAPDHOYsa7ZsQJ2pJfQHvh2OE/qPOQx0b1K9LmlJi0j9kDLqZSnsgDWif76Src7UkrlnmFkozEjX5JWM1tmOEFMCUaD3q2RlGC0zDAQMD4YHboZMTYYG2W/K8YEw6KdHhuMRtnvippxpVJjCHzOmGDsuX7A4JoV8mA8o9dXHFkgvw2zMfC7IiAvma3Re3gS+jtmHgyQj/NbI3+T2e+KhryZUWX2uyIg7zOskPQbG0O/K17I24E2Av/e0O8Kyahqj/7Q9kgQ+F+Z+dD2HElTURv6JbXzwdDvihrZ8NKKKrPfHZLaEQz9ktpRGfpdURPPjMbQHwT+1tDvjljptB7VtAJ/MPS7IuC/dlj63dGQt3bUEb913+WOWGfeGvufI37LOwLuWJJ3ZLMQ+Ge3QuQtHng7M3pjfx3x7439V/OH8vmqyHHr5iJW+ltjvztiD6Csm4tY/3VXzZWk/7AcXUn6j2DoV0GzyYpl9nds2/DYHeMsnxkci2ZAqshx6wdAMX9n7FdBMyAhcrxXdHn0qzBlQDpFl0e/CtrD3sKVaAbkQ+R4r+gqCIgNOXP7b2IRg+ZODrFMt941IrdfhdKHOOOeAnITTZZmQH5EjgdF16/4N3Lcau2XKpoB6SPHg6JrttxTk3UTTFlDKkWXR78Kc2qycvvdUfH2xGyd2b819rujPKByyJ68j1D7zP6r0R5ldZHjlbLvkthDMGu/O2LLgKzb8Tri3xn73VEWyjmk5+0MaY39ZSnpBQ3xZqMstp6QQDxDmhn7XdKRt5a0An8w9Lujxn8taQ39LunJ25Z3An9l6HdHTTxDXgz9VWa/S3rimVIb+juB/242DgDZ1ho7ytYak9IRz5A1eTefsR71uSIgK6VPhu+hF/itn9e4okEWlEcjf5XZ75INeTOlyex3RyD+AMs6U2I3Hqfo01wxZpvYJ2y2ie2F/rsJSo08KGtsNlKW1tQddzIkbpEHZYfNVuPSoLwyfOPP7GmRZ8grw22OoOgfG5S1st8lLeOCciytml9XMSYoxwFHUPK7pGV8UHboBSYlKLMPTM34DDkG5hH4+0r/Avk8ybp/c8OKtJJ6TFvgK0NwUmtOm+hWW8ni7XN3gWHy9lHhXBt+/tq8X22v8enMHUh7krkB/kr4v5uhIb2m5EqzJyC7de8h9RYZ4JUV8tsduVJjdO2uqfEZmLtbCXlJjY+m7JkZD3lTCAxNRc90QegPzmB6ZTNgybB65Jnr5jKXac+pJoQpLsTbPESLJcPksOI0v+Dw88PF355vPdhzmrccXxcKhUKhUCgUbp7/ADHCYO4TBQwjAAAAAElFTkSuQmCC" id="img_1" />
+                          </defs>
+                          <g>
+                            <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                          </g>
+                        </svg>
+                    </button>
 
                     <div class="sm-ls">
                         <a target="_blank" title="Phone call" href="tel:0719444041" class="skype-ln sm-ln">
@@ -45,6 +55,40 @@
                         <a title="Telegram" href="https://web.telegram.org/z/" target="_blank" class="twitter-ln sm-ln"><img width="20" alt="Telegram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAER0lEQVR4nO1ZzW8TRxRfpYVDjy09UThBu2t6Qy0BUuCfqFrRC0LqpYeqt6JccoNKCAkpQQmKoPRYUGkVmHFCZINoGwklfMWJEkLsJHZwjGMH52Oevf56aMZxEn9lZ+y1A5J/0pMsrz37+719782bt5rWRBNN1I6b+IHuhKMGgXaDwF86YeM6hSWdsKQw8RnG+DX+G52yVq0DW7SdxqF+2GcQ9ptBYd6ggCqmEwgYhF04QNlnDSd+gK58ahC4qlNmqhIvEUKZqVPo/rxvZU9DyH9B4LROIFor8RIjENEpfF834odHcJdBodd24rQktHr4vewl34cf6RRovckbmyIIv6c95EdwVyPJGxsi2KDjJu6uWUAjwsaomODQXRN5B4Ufdoq8kTcC31VFXh9c/sSgsLjTAnQC0apKLK/z9STW5orjpckkTixncCGetXoKV5TI893Rjk2q2A45Ac8+SmD/QhpTWdyAb217AZyLow/2K3hftAe2Ef9m3dt+toX1FtwNpiVygV2QY9+BLaJPqZO3y+HiRFJmzXneNFryF11lDcRPrHs7AKWss9kshiJLODnjL/j+zKOE1NqOfva1RPhAey3eTlfw9ioDnPD5cfSlD9cgvikKEVsH41L30SmckxFwW5b4KXfO26/KeDuPZCqFc8HX+HRyGsemZxASZsF1P7OoQFsFELhlHUL84LHNIl9KeDsfLuGlGD6f8gny4945TJjJkt8NLEgk8KaNygiIVvL21ekUhhMWGYmIKyJc5gRxbhMzfvEkyuHyC6kEztuitYAK9T8Utya+NVzy9mJ2HlPpdMX//DhsygsgLFG1gPZREz2xTNmwKQ6XvHkDQcxkthfe5orbLMDitHV4IJcDvd4UjsUyJeGSt9lgSAjbDgtWLURVIWSRxMV2b7yUfCC0iDJwhZQSWC6JVcoot3NDhTH/KhxBWXRNKSWwXBlV3cja7q3ik3Xy7jEfXhuaQtMi7vP4aUQhgXMb2a/WIURZq+JjxT+f+YWAW89m8R/3/9j70INRKK35xTjljqvt+JR9JdnMMb/Kwr/8tygE3Bj2CQHcOt0e9K5VfhJRUy2BdcrmpKd5vHVVWfzIwBo+nvSK8OHkb7iG8bjzDR4ZjONQJFNWwMOwagKz81o9DzR/PAng9X89+LtrGI85YwWtBy+5xeiZTsmTJyxx8A7bq6mATwRUBJx+8Aa77o9iq3O57PUOT7LgXPDzY6UE7tRU4eiPfWz3oZ73/UHIonc1K8LLkPI+RKqem/JZpZ0CqjGHE76tivyGCAI9OyigS7Pl5QWFvxtOnsDdk/fxQ/uGuwRIAwXcsW24WzTk7W5E2Jy0y/PlwGeVdRk5EgjXnLBKc1MCV/gGUztxxtfo5GVbazT47sjbDtXeiVvuP+y88g5bF3RgCx868bkN79n5wYOf7HIv8JgpTnkEnvNrvCUWXeW78Jq1iSa09x9vAV7LaYWk/U+hAAAAAElFTkSuQmCC"></a>
                     </div>
                 </div>
+
+                <!--Side nav and openBtn are hidden @media >= 500-->
+                <div id="sidePanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="./index.html" class="home-ln nv-ln">Home</a><br>
+                    <a href="#portFolio" class="portfolio-ln nv-ln">Portfolio</a><br>
+                    <a href="#blog" class="blog-ln nv-ln">Blog</a><br>
+                    <a href="#aboutMe" class="about-ln nv-ln">About Me</a><br>
+                    <a href="#contactMe" class="contact-ln nv-ln">Contact</a> <br>
+                    <button  id="themerId" onclick="turnLight()">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg title="Change Theme" id="nightTheme" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <image width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAABK9JREFUeJztne1x2zgQQF9u7n/UQdBBdBWEHZw6CEtwB2EHSQdmB/ZVYF4FUioQU4HUge8HpZFOSYwltEusKLwZjDWmzSdi8UlCEBQKhUKhUCgU9HmX+w0YsQTeAxUQDomL10f6Qzp/3QE/zn4/GXMJyBL4xBCAClgonXfPEJwO+IcMAbolAvAF2AKvE6XtwRnMr+6G+Ay8MF0QfpeeDu/lbvnMtLVBml4sL9ojK3wG4jw1VhfviYCPpkmStjZZ4Icv5M/ksUmFP7VOpERg6CyXCuf6Dmw4zSvg/3OOI9WZOwAPDHOYsa7ZsQJ2pJfQHvh2OE/qPOQx0b1K9LmlJi0j9kDLqZSnsgDWif76Src7UkrlnmFkozEjX5JWM1tmOEFMCUaD3q2RlGC0zDAQMD4YHboZMTYYG2W/K8YEw6KdHhuMRtnvippxpVJjCHzOmGDsuX7A4JoV8mA8o9dXHFkgvw2zMfC7IiAvma3Re3gS+jtmHgyQj/NbI3+T2e+KhryZUWX2uyIg7zOskPQbG0O/K17I24E2Av/e0O8Kyahqj/7Q9kgQ+F+Z+dD2HElTURv6JbXzwdDvihrZ8NKKKrPfHZLaEQz9ktpRGfpdURPPjMbQHwT+1tDvjljptB7VtAJ/MPS7IuC/dlj63dGQt3bUEb913+WOWGfeGvufI37LOwLuWJJ3ZLMQ+Ge3QuQtHng7M3pjfx3x7439V/OH8vmqyHHr5iJW+ltjvztiD6Csm4tY/3VXzZWk/7AcXUn6j2DoV0GzyYpl9nds2/DYHeMsnxkci2ZAqshx6wdAMX9n7FdBMyAhcrxXdHn0qzBlQDpFl0e/CtrD3sKVaAbkQ+R4r+gqCIgNOXP7b2IRg+ZODrFMt941IrdfhdKHOOOeAnITTZZmQH5EjgdF16/4N3Lcau2XKpoB6SPHg6JrttxTk3UTTFlDKkWXR78Kc2qycvvdUfH2xGyd2b819rujPKByyJ68j1D7zP6r0R5ldZHjlbLvkthDMGu/O2LLgKzb8Tri3xn73VEWyjmk5+0MaY39ZSnpBQ3xZqMstp6QQDxDmhn7XdKRt5a0An8w9Lujxn8taQ39LunJ25Z3An9l6HdHTTxDXgz9VWa/S3rimVIb+juB/242DgDZ1ho7ytYak9IRz5A1eTefsR71uSIgK6VPhu+hF/itn9e4okEWlEcjf5XZ75INeTOlyex3RyD+AMs6U2I3Hqfo01wxZpvYJ2y2ie2F/rsJSo08KGtsNlKW1tQddzIkbpEHZYfNVuPSoLwyfOPP7GmRZ8grw22OoOgfG5S1st8lLeOCciytml9XMSYoxwFHUPK7pGV8UHboBSYlKLMPTM34DDkG5hH4+0r/Avk8ybp/c8OKtJJ6TFvgK0NwUmtOm+hWW8ni7XN3gWHy9lHhXBt+/tq8X22v8enMHUh7krkB/kr4v5uhIb2m5EqzJyC7de8h9RYZ4JUV8tsduVJjdO2uqfEZmLtbCXlJjY+m7JkZD3lTCAxNRc90QegPzmB6ZTNgybB65Jnr5jKXac+pJoQpLsTbPESLJcPksOI0v+Dw88PF355vPdhzmrccXxcKhUKhUCgUbp7/ADHCYO4TBQwjAAAAAElFTkSuQmCC" id="img_1" />
+                          </defs>
+                          <g>
+                            <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                          </g>
+                        </svg>
+                    </button>
+
+                    <div class="sm-ls">
+                        <a target="_blank" title="Phone call" href="tel:0719444041" class="skype-ln sm-ln">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABW0lEQVQ4jc2SPy9DYRSHn/PeRm8rFklFJEwGgw9gkvAFbAaxqCA0KQZpme4kNRBpgojBJILP0MVksVhsFolINI0S0ittj0HJpf7k3op4kjc5b87vPMPJgf+OvPtls2FCD1EAwqbMeOrer9C8VbuOTejxEqQAUsDVIpuZ0eDC+6YWIObpCardwYVh8+R3+HvhZOoOKP6eUESBnKd3BeYguBAA3aoV11imn0TqvDHhdDoHnAI2VfF9MvVCEQUrDkTRyj6HTlNjQoCZhTNEl4BB8vYuqlI/9jVfh7cy6yizqO4Rc+MMOy9ntb3cQ0WGPMkLZhaPfhY6jqHNXgXmEHJgjWC0hUr1GOjwJBU33Mr8/O33wlc2MhMIWaBUe+11mXK1jeTSDXy2w48k0jtYphfk5FPZB3wtnM2VPkSnUB0A6arN54mUOhlzSv6FXtbWItiuTbn5kWTSDez5c54BJk1gYeOk9agAAAAASUVORK5CYII=">
+                        </a>
+                        <a target="_blank" title="Facebook" href="https://web.facebook.com/denis.mytin.3/" class="fb-ln sm-ln">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAACYklEQVQ4jb2TP2hTURTGv3vzqhRDaYutbWyNtYipxU0FFxcj6ipdHERwLNKhYKXg8JaiFJx0ENShgouICI4ODlEc6p8KUsQqQoiNTW3SkNqY93K/49C+5OUlsQjimQ68j9875/7uBf5xqT9+tUUP7Vs7aAz3lAEoY5JfUh3zsBX/Cjj8MN/JUmiC5AUR6SEFpEBEQEraUGa0WNPJ0fbclsChB4XjIB6R0rUJ8MP8fUaIkfRYd6IpcBP2jJRtW8C83qFhfHk8kqgDbqypPzaarHO7wuUjrTjcY2FbCHjyqYSplwUvkyk7biw/Gc0BgOUB6YSukGy45s0TYRyLtFQ2iYS1L8NuhPQEgMnqhLboAwOFbw0EoKtVYfZ8BwDgztw67r5fR6FEZNYMROhll/LF/ghsRQ0AsejP4UYwUrB7R/WY738o4muuHISBlF1hnRwCAA0A1KavmQDLp63oeBDWZxX7K2doCJFA4OTeFtw73VZzpV5f7AIA3Jot4Orz1ZofG0KqUoxJiaAmIE3fArCQdevEiTKpGinR3myKlF4vEG4Bom0hHNpp4UZ8Y9Jzj38gvWbwecXFatH4NuKiYw/2AUr0BlDRUGb8K+d/EXPfHSxk3cpk88su3i6WAjABoGYAJRUpAKDFmiYlEzxsiFSAlAbiIEsO9HSF4zXJ0facECMi4vguLegDBsUJpCSuGoE9sFoHBID0WHeChnFSMv6rUQEGJhNXxctTgy/8jBogACyPRxJlx40ZynWIpP1ATwCAay5CsSCsarlZ2aLPxrJHz+y3TgEat1+tPH1zKfrOE/Bf6jfqoGfDhy3C+QAAAABJRU5ErkJggg==">
+                        </a>
+                        <a title="Telegram" href="https://web.telegram.org/z/" target="_blank" class="twitter-ln sm-ln"><img width="20" alt="Telegram" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAER0lEQVR4nO1ZzW8TRxRfpYVDjy09UThBu2t6Qy0BUuCfqFrRC0LqpYeqt6JccoNKCAkpQQmKoPRYUGkVmHFCZINoGwklfMWJEkLsJHZwjGMH52Oevf56aMZxEn9lZ+y1A5J/0pMsrz37+719782bt5rWRBNN1I6b+IHuhKMGgXaDwF86YeM6hSWdsKQw8RnG+DX+G52yVq0DW7SdxqF+2GcQ9ptBYd6ggCqmEwgYhF04QNlnDSd+gK58ahC4qlNmqhIvEUKZqVPo/rxvZU9DyH9B4LROIFor8RIjENEpfF834odHcJdBodd24rQktHr4vewl34cf6RRovckbmyIIv6c95EdwVyPJGxsi2KDjJu6uWUAjwsaomODQXRN5B4Ufdoq8kTcC31VFXh9c/sSgsLjTAnQC0apKLK/z9STW5orjpckkTixncCGetXoKV5TI893Rjk2q2A45Ac8+SmD/QhpTWdyAb217AZyLow/2K3hftAe2Ef9m3dt+toX1FtwNpiVygV2QY9+BLaJPqZO3y+HiRFJmzXneNFryF11lDcRPrHs7AKWss9kshiJLODnjL/j+zKOE1NqOfva1RPhAey3eTlfw9ioDnPD5cfSlD9cgvikKEVsH41L30SmckxFwW5b4KXfO26/KeDuPZCqFc8HX+HRyGsemZxASZsF1P7OoQFsFELhlHUL84LHNIl9KeDsfLuGlGD6f8gny4945TJjJkt8NLEgk8KaNygiIVvL21ekUhhMWGYmIKyJc5gRxbhMzfvEkyuHyC6kEztuitYAK9T8Utya+NVzy9mJ2HlPpdMX//DhsygsgLFG1gPZREz2xTNmwKQ6XvHkDQcxkthfe5orbLMDitHV4IJcDvd4UjsUyJeGSt9lgSAjbDgtWLURVIWSRxMV2b7yUfCC0iDJwhZQSWC6JVcoot3NDhTH/KhxBWXRNKSWwXBlV3cja7q3ik3Xy7jEfXhuaQtMi7vP4aUQhgXMb2a/WIURZq+JjxT+f+YWAW89m8R/3/9j70INRKK35xTjljqvt+JR9JdnMMb/Kwr/8tygE3Bj2CQHcOt0e9K5VfhJRUy2BdcrmpKd5vHVVWfzIwBo+nvSK8OHkb7iG8bjzDR4ZjONQJFNWwMOwagKz81o9DzR/PAng9X89+LtrGI85YwWtBy+5xeiZTsmTJyxx8A7bq6mATwRUBJx+8Aa77o9iq3O57PUOT7LgXPDzY6UE7tRU4eiPfWz3oZ73/UHIonc1K8LLkPI+RKqem/JZpZ0CqjGHE76tivyGCAI9OyigS7Pl5QWFvxtOnsDdk/fxQ/uGuwRIAwXcsW24WzTk7W5E2Jy0y/PlwGeVdRk5EgjXnLBKc1MCV/gGUztxxtfo5GVbazT47sjbDtXeiVvuP+y88g5bF3RgCx868bkN79n5wYOf7HIv8JgpTnkEnvNrvCUWXeW78Jq1iSa09x9vAV7LaYWk/U+hAAAAAElFTkSuQmCC"></a>
+                    </div>
+                </div>
+
+                <button class="openBtn" onclick="openNav()">&#9776;</button>
+
             </nav>
         </header>
 
@@ -74,7 +118,7 @@
                 <div class="m-h-prof">
                     <h4 class="u-p-t upper cl-o">INTRODUCTION</h4>
                     <p class="u-ql">Web Developer, Academic Writer, Lab Technologist</p>
-                    <p class="u-d"> 3 years as a web developer. Expert in HTML, CSS, Bootstrap and Javascript. Over 9 years as an academic writer. Written at least 400 Disseratations and Thesis, and over 600 Essays, reflection papers, case studies, capstone projects and exams. Worked as an assistant medical research associate at Kenya Medical Research Institute and assistant Laboratory Technologist in Kenyatta University Health Unit.</p>
+                    <p class="u-d"> 3 years as a web developer. Expert in HTML, CSS, Bootstrap and Javascript. Over 9 years as an academic writer. Written at least 400 Disseratations and Thesis, and over 600 Essays, reflection papers, case studies, capstone projects and exams. Worked as an assistant medical research associate at Kenya Medical Research Institute and assistant Laboratory Technologist at Kenyatta University Health Unit. <br> <br> <a style="display: none;" href=" ./../../../../../Desktop/wtf/bible/DENIS KING'ORI -WEB-RESUME.pdf" download="./../../../../../Desktop/wtf/bible/DENIS KING'ORI -WEB-RESUME.pdf" target="_blank" class="rmo">View or Download resume</a></p>
                     <button id="moBtn" class="u-lm-ln cl-o" onclick="showMore()">Learn more &DownArrow;</button>
                 </div>
             </div>
@@ -83,7 +127,7 @@
             <div class="m-s-s lt-bk">
                 <p class="ms-t upper cl-o">services</p>
                 <p class="ms-u-t">What I Am Great At</p>
-                <p class="ms-ds cl-gray">Web Development and Design, Medical research, Web research, Academic writing, name it.</p>
+                <p class="ms-ds cl-gray">Web Development and Design, Medical research, Web research, and Academic writing.</p>
                
                 <div class="s-bxs ds-flex">
                     <div class="s-bx-m">
@@ -160,7 +204,7 @@
             <div id="portFolio" class="pf-s dk-bk">
                 <p class="ms-t upper cl-o">Portfolio</p>
                 <p class="ms-u-t">My Masterpiece Collection</p>
-                <p class="ms-ds cl-gray">Sample projects from past assignments</p>
+                <p class="ms-ds cl-gray">Sample projects from past clients</p>
                
                 <div id="tabs" class="tab-s">
                     <div class="tb-btns-bx">
@@ -172,42 +216,42 @@
                     </div>
 
                     <div id="all" class="m-top cc tb-ctn">
-                        <img src="./images/eller.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
-                        <img src="./images/med.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
-                        <img src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
-                        <img src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img">
+                        <img title="Click to view Paper" src="./images/ac1.PNG" width="50" alt="Portfolio work" id="pmg" class="p-img" onclick="openImagea()">
+                        <img title="Click to view document" src="./images/med.png" width="50" alt="Portfolio work" id="pmh" class="p-img" onclick="openImageb()">
+                        <img title="Click to view template" src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img" onclick="openImagec()">
+                        <img title="Click to view template" src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img" onclick="openImaged()">
 
                     </div>
 
                     <div class="tb-ctn" id="uidesign">
-                        <img src="./images/akk.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
-                        <img src="./images/church.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
-                        <img src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
-                        <img src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img">
+                        <img title="Click to view template" src="./images/akk.png" width="50" alt="Portfolio work" id="pmg" class="p-img" onclick="openImagee()">
+                        <img title="Click to view template" src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmh" class="p-img" onclick="openImagef()">
+                        <img title="Click to view template" src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img" onclick="openImageg()">
+                        <img title="Click to view template" src="./images/church-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img" onclick="openImageh()">
 
                     </div>
 
                     <div class="tb-ctn" id="webdev">
-                        <img src="./images/akk.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
-                        <img src="./images/lab.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
-                        <img src="./images/med.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
-                        <img src="./images/KU REC LETTER.jpeg" width="50" alt="Portfolio work" id="pmj" class="p-img">
+                        <img title="Click to view paper" src="./images/mr1.PNG" width="50" alt="Portfolio work" id="pmg" class="p-img" onclick="openImagei()">
+                        <img title="Click to view document" src="./images/lab.png" width="50" alt="Portfolio work" id="pmh" class="p-img" onclick="openImagej()">
+                        <img title="Click to view document" src="./images/med.png" width="50" alt="Portfolio work" id="pmi" class="p-img" onclick="openImagek()">
+                        <img title="Click to view document" src=" ./images/KU REC LETTER.jpeg" width="50" alt="Portfolio work" id="pmj" class="p-img" onclick="openImagel()">
 
                     </div>
 
                     <div class="tb-ctn" id="webr">
-                        <img src="./images/eller.png" width="50" alt="Portfolio work" id="pmg" class="p-img">
-                        <img src="./images/lab.png" width="50" alt="Portfolio work" id="pmh" class="p-img">
-                        <img src="./images/shoe-big.png" width="50" alt="Portfolio work" id="pmi" class="p-img">
-                        <img src="./images/hosp-big.png" width="50" alt="Portfolio work" id="pmj" class="p-img">
+                        <img title="Click to view paper" src="./images/wr4.PNG" width="50" alt="Portfolio work" id="pmg" class="p-img" onclick="openImagem()">
+                        <img title="Click to view paper" src="./images/wr3.PNG" width="50" alt="Portfolio work" id="pmh" class="p-img" onclick="openImagen()">
+                        <img title="Click to view paper" src="./images/wr2.PNG" width="50" alt="Portfolio work" id="pmi" class="p-img" onclick="openImageo()">
+                        <img title="Click to view paper" src="./images/wr1.PNG" width="50" alt="Portfolio work" id="pmj" class="p-img" onclick="openImagep()">
 
                     </div>
 
                     <div class="tb-ctn" id="sr">
-                        <img src="./../../blog14.jpg" width="50" alt="Portfolio work" id="pmg" class="p-img">
-                        <img src="./../../blog12.jpg" width="50" alt="Portfolio work" id="pmh" class="p-img">
-                        <img src="./../../blog12.jpg" width="50" alt="Portfolio work" id="pmi" class="p-img">
-                        <img src="./../../blog12.jpg" width="50" alt="Portfolio work" id="pmj" class="p-img">
+                        <img title="Click to view paper" src="./images/ac1.PNG" width="50" alt="Portfolio work" id="pmg" class="p-img" onclick="openImageq()">
+                        <img title="Click to view paper" src="./images/ac2.PNG" width="50" alt="Portfolio work" id="pmh" class="p-img" onclick="openImager()">
+                        <img title="Click to view paper" src="./images/ac3.PNG" width="50" alt="Portfolio work" id="pmi" class="p-img" onclick="openImages()">
+                        <img title="Click to view paper" src="./images/ac2.PNG" width="50" alt="Portfolio work" id="pmj" class="p-img" onclick="openImaget()">
 
                     </div>
                 </div>
@@ -217,7 +261,7 @@
             <div id="blog" class="nws-s">
                 <p class="ms-t upper cl-o">latest News</p>
                 <p class="ms-u-t">MyLatest Articles</p>
-                <p class="ms-ds cl-gray">Web technology, software, medical and academic research.</p>
+                <p class="ms-ds cl-gray">All there is to know about Web technology, software, medical and academic research.</p>
                
                 <div class="art-bxs">
                     <div class="art-bx">
@@ -318,7 +362,7 @@
         
         <hr width="95%" class="cl-o">
         <div class="c-bx">
-            <p class="cp-t">&copy;2022 Denis King'ori&centerdot; All Rights Reserved.</p>
+            <p class="cp-t">&copy;2022 Webster &centerdot; All Rights Reserved.</p>
         </div>
     </footer>
     <script src="script.js"></script>

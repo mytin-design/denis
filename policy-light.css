@@ -1,21 +1,31 @@
 /*Policy styles */
-.main-head {
-    height: fit-content;
+html, body {
+    background-color: white;
+
+}
+.body-head {
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
 }
 
-#web-hero {
-    display: none;
+.main-h-t {
+    font-size: 3rem;
+    color: #000;
+    margin-left: 5pc;
 }
+
 
 .policy-holder {
-    color: white;
+    color: #000;
     width: 70%;
     margin-left: 2pc;
+    padding: 1pc;
 }
 
 .policy-card {
     padding: 2pc;
-    color: black;
 }
 .policy-title {
     font-size: 2rem;
@@ -59,22 +69,182 @@
 }
 
 
-@media only screen and (max-width: 996px) {
-    .main-head {
-        height: fit-content;
+    /* footer styles - suatomotives template*/
+    
+    
+    .foo-link-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50vh;
+        padding: 1pc;
+    }
+    
+    .address-box {
+        display: flex;
+        flex-flow: column;
+        gap: .5pc;
+    }
+    .x-logo-link {
+        font-size: 3rem;
+    }
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+        width: 10pc;
+        padding: .5pc;
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+        color: #000; /* change in second theme */
+    
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    .sec-link:hover {
+        color: #222;
     }
     
     
+    
+    .address-box-img {
+        width: 20pc;
+        height: 5pc;
+    }
+    
+    .foo-loc-tag {
+        margin-top: 1pc;
+    }
+    
+    .ad-tag {
+        display: flex;
+        color: rgb(0, 162, 255);
+    }
+    
+    address {
+        padding-left: 1pc;
+        text-decoration: inherit;
+        color: #000;
+    }
+    
+    
+    .crights-box  {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+    }
+
+    .c-right {
+        color: #000;
+
+    }
+
+@media only screen and (max-width: 996px) {
+    
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        background-color: inherit;
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        
+    }
+    .foo {
+        margin: 2pc;
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-    .main-head {
-        height: fit-content;
+    
+    .main-h-t {
+        font-size: 1.5rem;
     }
-
-
     .policy-card, .policy-text {
         width: 100%;
         border: .1pc solid transparent;
+    }
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        background-color: inherit;
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        
+    }
+    .foo {
+        margin: 2pc;
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
     }
 }
