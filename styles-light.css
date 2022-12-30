@@ -89,7 +89,16 @@ a {
     display: none;
 }
 
-
+#themeId, #themerId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.25pc;
+    width: 1.25pc;
+    border-radius: 100%;
+    background-color: white;
+    border: none;
+}
 
 .m-s {
     background-color: #fff;
@@ -646,7 +655,7 @@ a {
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.815);
-        overflow: hidden;
+        overflow: scroll;
         padding-top: 3pc;
         transition: .5s;
         display: block;
@@ -941,5 +950,396 @@ a {
         left: 80%;
     }
 
+
+}
+
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .v-c {
+        width: 100%;
+        display: flex;
+        gap: 1pc;
+        padding: .5pc;
+    }
+    
+
+
+    .m-s {
+        padding-top: 3pc;
+    }
+
+    .m-h{
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .my-img {
+        position: unset;
+        height: 10pc;
+        width: 10pc;
+        border-radius: 100%;
+    }
+
+
+    .v-line {
+        display: none;
+    }
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+    .s-bx-m {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .s-stats {
+        width: 100%;
+    }
+
+    .stat-vl, .stat-ds {
+        font-size: .8rem;
+    }
+
+
+
+    .tb-btns-bx {
+        width: 100%;
+    }
+
+
+    .tb-bn {
+        font-size: .6rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+    .art-bxs {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 295pc;
+        left: 80%;
+    }
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .v-c {
+        width: 100%;
+        display: flex;
+        gap: 1pc;
+        padding: .5pc;
+    }
+    
+
+
+    .m-s {
+        padding-top: 3pc;
+    }
+
+    .m-h{
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .my-img {
+        position: unset;
+        height: 10pc;
+        width: 10pc;
+        border-radius: 100%;
+    }
+
+
+    .v-line {
+        display: none;
+    }
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+    .s-bx-m {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .s-stats {
+        width: 100%;
+    }
+
+    .stat-vl, .stat-ds {
+        font-size: .8rem;
+    }
+
+
+
+    .tb-btns-bx {
+        width: 100%;
+    }
+
+
+    .tb-bn {
+        font-size: .6rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+    .art-bxs {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 295pc;
+        left: 80%;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .v-c {
+        width: 100%;
+        display: flex;
+        gap: 1pc;
+        padding: .5pc;
+    }
+    
+
+
+    .m-s {
+        padding-top: 3pc;
+    }
+
+    .m-h{
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .m-h-info {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .my-img {
+        position: unset;
+        height: 10pc;
+        width: 10pc;
+        border-radius: 100%;
+    }
+
+
+    .v-line {
+        display: none;
+    }
+    .m-s-s {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+    .s-bx-m {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+    }
+
+    .s-stats {
+        width: 100%;
+    }
+
+    .stat-vl, .stat-ds {
+        font-size: .8rem;
+    }
+
+
+
+    .tb-btns-bx {
+        width: 100%;
+    }
+
+
+    .tb-bn {
+        font-size: .6rem;
+    }
+        .tb-ctn {
+    margin: 3pc auto;
+    display: grid;
+    grid-template-areas: 
+    "ltop" 
+    "mid" 
+    "rside"
+    "llow";
+    grid-template-rows: auto;
+    gap: 1pc;
+    width: 90%;
+}
+
+.tab-s {
+    width: 100%;
+}
+    #pmg {
+        grid-area: ltop;
+        height: 100%;
+        width: 100%;
+    
+    }
+    
+    #pmh {
+        grid-area: llow;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmi {
+        grid-area: mid;
+        height: 100%;
+        width: 100%;
+    }
+    
+    #pmj {
+        grid-area: rside;
+        height: 100%;
+        width: 100%;
+    
+    }
+
+    .art-bxs {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .cp-t {
+        margin: .5pc;
+    }
+
+    .up-btn  {
+        position: absolute;
+        top: 295pc;
+        left: 80%;
+    }
 
 }

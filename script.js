@@ -21,10 +21,7 @@ function closeNav() {
     let theme = document.getElementById("themerId");
 
     //change button styles
-    themer.style.border = "none";
-    theme.style.backgroundColor = "#eee";
-    document.getElementById("nightTheme").style.backgroundColor = "#eee";
-
+    
 function turnLight() {
     sheet.setAttribute("href", "styles-light.css");
     sheet2.setAttribute("href", "policy-light.css");
@@ -35,9 +32,7 @@ function turnLight() {
     theme.setAttribute("onclick", "turnDark()");
 
     //change button styles
-    themer.style.border = "none";
-    theme.style.backgroundColor = "#eee";
-    document.getElementById("nightTheme").style.backgroundColor = "#fff";
+    
 
 }
 
@@ -49,8 +44,7 @@ function turnDark() {
     themer.setAttribute("onclick", "turnLight()");
     //for media width <=500
     theme.setAttribute("onclick", "turnLight()");
-    document.getElementById("nightTheme").style.backgroundColor = "#eee";
-
+    
 
 }
 
