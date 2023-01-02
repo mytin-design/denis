@@ -23,7 +23,7 @@ function closeNav() {
     //change button styles
     
 function turnLight() {
-    sheet.setAttribute("href", "styles-light.css");
+    sheet.setAttribute("href", "styles-light1.css");
     sheet2.setAttribute("href", "policy-light.css");
 
     //for media width >=996

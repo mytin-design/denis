@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     user-select: none;
+    transition: .5s ease;
 }
 
 :root {
@@ -11,23 +12,26 @@
     --light-text: #999;
     --orange: orange;
     --white: white;
+    --black: #000000;
+    --navy: navy;
+    --blue: blue;
 }
 
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
 }
 
 .lt-grey, .cl-gray {
-    color: var(--light-text);
+    color: var(--black);
 }
 
 .lt-bk {
-    background-color: var(--light-grey);
+    background-color: var(--black);
 }
 .h-w {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     height: fit-content;
 }
 
@@ -40,7 +44,7 @@ a {
 }
 
 .cl-o {
-    color: var(--orange);
+    color: var(--navy);
 }
 
 .upper {
@@ -72,7 +76,7 @@ a {
 }
 
 .nv-ln:hover {
-    color: var(--light-text);
+    color: var(--black);
 }
 
 .n-ls {
@@ -101,7 +105,7 @@ a {
     height: 1.25pc;
     width: 1.25pc;
     border-radius: 100%;
-    background-color: orange;
+    background-color: var(--white);
     border: none;
     transition: .5s ease;
 }
@@ -114,7 +118,7 @@ a {
 }
 
 .m-s {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     height: fit-content;
 }
 
@@ -143,18 +147,18 @@ a {
 }
 
 .d-n {
-    color: var(--white);
+    color: var(--black);
 }
 
 .sm-m-ln {
-    color: var(--light-text);
+    color: var(--navy);
     font-size: .8rem;
     transition: .5s ease;
 
 }
 
 .sm-m-ln:hover {
-    color: white;
+    color: var(--black);
 }
 
 .mh-btn {
@@ -168,16 +172,16 @@ a {
 .c-me {
     padding: .5pc;
     background-color: transparent;
-    border: .1pc solid var(--orange);
-    color: var(--orange);
+    border: .1pc solid var(--navy);
+    color: var(--navy);
     text-align: center;
     width: 90%;
     transition: .5s ease;
 }
 
 .c-me:hover {
-   border: .1pc solid gold;
-    color: gold; 
+   border: .1pc solid var(--black);
+    color: var(--black); 
 }
 
 
@@ -209,12 +213,12 @@ a {
 
 .u-ql {
     font-weight: bolder;
-    color: var(--white);
+    color: var(--black);
     font-size: 1.5rem;
 }
 
 .u-d {
-    color: var(--light-text);
+    color: var(--dark-gray);
 }
 
 .u-lm-ln {
@@ -223,14 +227,14 @@ a {
 }
 
 .u-lm-ln:hover {
-    color: gold;
+    color: blue;
 }
 
 
 /* my services */
 
 .m-s-s {
-    background-color: var(--light-grey);
+    background-color: var(--white);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -238,7 +242,6 @@ a {
     justify-content: center;
     padding: 1pc;
     gap: 1pc;
-    color: var(--white);
     height: fit-content;
 }
 
@@ -264,7 +267,7 @@ a {
 }
 
 .s-bx {
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     padding: 1pc;
     display: flex;
     flex-flow: column;
@@ -274,11 +277,12 @@ a {
     height: 12pc;
         width: 12pc;
     transition: 1s ease;
+    box-shadow: 0pc 0pc 0.666pc 0.1pc #eee;
+
 
 }
 
 .s-bx:hover {
-    background-color:#000;
     cursor: default;
 }
 
@@ -319,15 +323,17 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: var(--white);
+    color: var(--black);
     gap: 1pc;
     padding: .5pc;
-    background-color: var(--dark-gray);
+    background-color: var(--white);
     height: fit-content;
 }
 
 .tab-s {
     width: 90%;
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+
 }
 
 
@@ -339,7 +345,7 @@ a {
 }
 
 .tb-bn {
-    color: var(--light-text);
+    color: var(--black);
     cursor: default;
     transition: .5s ease;
 
@@ -347,7 +353,7 @@ a {
 
 .tb-bn:hover {
     text-decoration: underline;
-    color: var(--orange);
+    color: var(--navy);
 }
 
 .tb-ctn {
@@ -388,19 +394,24 @@ a {
     width: 320px;
 }
 
+.p-img {
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+
+}
+
 
 /* articles */
 
 .nws-s {
     text-align: center;
-    color: var(--white);
+    color: var(--black);
     display: flex;
     flex-direction: column;
     gap: 1pc;
     padding: 1pc;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-grey);
+    background-color: var(--white);
     height: fit-content;
 }
 
@@ -419,7 +430,9 @@ a {
     display: flex;
     flex-flow: column;
     text-align: start;
-    background-color: var(--dark-gray);
+    background-color: var(--white);
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+
 }
 
 .art-img{
@@ -452,7 +465,9 @@ a {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     gap: 1pc;
-    background-color: var(--dark-gray);
+    background-color: var(--white);
+    box-shadow: 0pc 0pc 0.66pc 0.1pc #eee;
+
 }
 
 .art-img-sd {
@@ -464,7 +479,7 @@ a {
     position: absolute;
     padding: .3pc;
     font-size: .4rem;
-    background-color: #000;
+    background-color: var(--white);
 }
 
 .art-sbx > * {
@@ -476,11 +491,16 @@ a {
     position: absolute;
     padding: .3pc;
     font-size: .6rem;
-    background-color: #000;
+    background-color: var(--white);
 }
 
 .art-info-sd {
     padding: .5pc;
+}
+
+.art-t {
+    color: var(--black);
+    font-weight: bold;
 }
 
 .art-t-sd {
@@ -510,8 +530,8 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 1pc;
-    background-color: var(--dark-gray);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
     height: fit-content;
 }
 
@@ -531,15 +551,16 @@ a {
     align-items: center;
     gap: 1pc;
     font-size: .8rem;
-    background-color: var(--light-grey);
+    background-color: var(--white);
     padding: .5pc;
     transition: .5s ease;
+    box-shadow: 0pc 0pc 0.666pc 0.1pc #eee;
+
     
 }
 
 .c-ln:hover {
-    background-color: rgba(15, 14, 14, 0.26);
-    color: gold;
+    color: var(--black);
 }
 
 
@@ -553,15 +574,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .1pc solid var(--orange);
-    color: var(--orange);
+    border: .1pc solid var(--blue);
+    color: var(--blue);
     transition: .5s ease;
 
 }
 
 .up-btn:hover {
-    color: gold;
-    border-color: gold;
+    color: var(--navy);
+    border-color: var(--navy);
 }
 /* 3/4 full screen size */
 @media only screen and (max-width:996px){
@@ -640,7 +661,6 @@ a {
 
     .tb-btns-bx {
         width: 100%;
-        border: .1pc solid red;
     }
 
 
@@ -881,7 +901,7 @@ a {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.815);
+        background-color: var(--black);
         overflow: hidden;
         padding-top: 3pc;
         transition: .5s;
@@ -892,7 +912,7 @@ a {
         padding: .3pc .3pc .3pc 2.2pc;
         text-decoration: none;
         font-size: 1pc;
-        color: white;
+        color: var(--white);
         display: block;
         transition: .3s;
     }
@@ -916,15 +936,15 @@ a {
     .openBtn {
         font-size: 1.2pc;
         cursor: pointer;
-        background-color: #000;
-        color: white;
+        background-color: var(--black);
+        color: var(--white);
         padding: 10px 15px;
         border: none;
         display: inline;
     }
 
     .openBtn:hover {
-        color: white;
+        color: var(--white);
     }
 
     .sm-ls {
@@ -1084,7 +1104,7 @@ a {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.815);
+        background-color: var(--black);
         overflow: hidden;
         padding-top: 3pc;
         transition: .5s;
@@ -1095,7 +1115,7 @@ a {
         padding: .3pc .3pc .3pc 2.2pc;
         text-decoration: none;
         font-size: 1pc;
-        color: white;
+        color: var(--white);
         display: block;
         transition: .3s;
     }
@@ -1119,15 +1139,15 @@ a {
     .openBtn {
         font-size: 1.2pc;
         cursor: pointer;
-        background-color: #000;
-        color: white;
+        background-color: var(--black);
+        color: var(--white);
         padding: 10px 15px;
         border: none;
         display: inline;
     }
 
     .openBtn:hover {
-        color: white;
+        color: var(--white);
     }
 
     
