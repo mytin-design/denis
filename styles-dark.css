@@ -640,7 +640,6 @@ a {
 
     .tb-btns-bx {
         width: 100%;
-        border: .1pc solid red;
     }
 
 
@@ -725,11 +724,66 @@ a {
         padding: .5pc;
     }
     .n-ls {
-        width: 70%;
+        display: none;
     }
+    #sidePanel {
+        height: 100%;
+        width: 0; /* show contents by changing width */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.815);
+        overflow: hidden;
+        padding-top: 3pc;
+        transition: .5s;
+        display: block;
+    }
+
+    .sidepanel a {
+        padding: .3pc .3pc .3pc 2.2pc;
+        text-decoration: none;
+        font-size: 1pc;
+        color: white;
+        display: block;
+        transition: .3s;
+    }
+
+    .sidepanel a:hover {
+        color: var(--light-text);
+    }
+
+    .sidepanel button {
+        margin: .3pc .3pc .3pc 2.2pc;
+
+    }
+
+    .sidepanel .closebtn {
+        position: absolute;
+        top: 0;
+        left: 10pc;
+        font-size: 2pc;
+    }
+
+    .openBtn {
+        font-size: 1.2pc;
+        cursor: pointer;
+        background-color: #000;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        display: inline;
+    }
+
+    .openBtn:hover {
+        color: white;
+    }
+
     .sm-ls {
-        width: 20%;
+        width: 70%;
+        padding: .5pc;
     }
+
 
     
     .c-me {
