@@ -107,6 +107,7 @@ a {
     border-radius: 100%;
     background-color: var(--white);
     border: none;
+    outline: none;
     transition: .5s ease;
 }
 
@@ -681,7 +682,7 @@ a {
 }
 
 .tb-btns-bx {
-    width: 60%;
+    width: 100%;
 }
 
 .tab-s {
@@ -739,7 +740,7 @@ a {
 }
 
 /* half laptop size */
-@media only screen and (max-width:732px) {
+@media only screen and (max-width:750px) {
     /* the heights used are specifically for iphone 6 */
     .v-c {
         padding: .5pc;
@@ -825,9 +826,6 @@ a {
     width: 90%;
 }
 
-.tb-btns-bx {
-    width: 60%;
-}
 
 .tab-s {
     width: 100%;
@@ -971,7 +969,7 @@ a {
     }
 
     .c-me {
-        width: 70%;
+        width: 50%;
     }
 
     .my-img {

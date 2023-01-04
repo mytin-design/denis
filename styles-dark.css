@@ -103,6 +103,7 @@ a {
     border-radius: 100%;
     background-color: orange;
     border: none;
+    outline: none;
     transition: .5s ease;
 }
 
@@ -638,6 +639,9 @@ a {
         font-size: .8rem;
     }
 
+    .tab-s {
+        width: 100%;
+    }
     .tb-btns-bx {
         width: 100%;
     }
@@ -718,73 +722,17 @@ a {
 }
 
 /* half laptop size */
-@media only screen and (max-width:732px) {
+@media only screen and (max-width:750px) {
     /* the heights used are specifically for iphone 6 */
     .v-c {
         padding: .5pc;
     }
     .n-ls {
-        display: none;
-    }
-    #sidePanel {
-        height: 100%;
-        width: 0; /* show contents by changing width */
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.815);
-        overflow: hidden;
-        padding-top: 3pc;
-        transition: .5s;
-        display: block;
-    }
-
-    .sidepanel a {
-        padding: .3pc .3pc .3pc 2.2pc;
-        text-decoration: none;
-        font-size: 1pc;
-        color: white;
-        display: block;
-        transition: .3s;
-    }
-
-    .sidepanel a:hover {
-        color: var(--light-text);
-    }
-
-    .sidepanel button {
-        margin: .3pc .3pc .3pc 2.2pc;
-
-    }
-
-    .sidepanel .closebtn {
-        position: absolute;
-        top: 0;
-        left: 10pc;
-        font-size: 2pc;
-    }
-
-    .openBtn {
-        font-size: 1.2pc;
-        cursor: pointer;
-        background-color: #000;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        display: inline;
-    }
-
-    .openBtn:hover {
-        color: white;
-    }
-
-    .sm-ls {
         width: 70%;
-        padding: .5pc;
     }
-
-
+    .sm-ls {
+        width: 20%;
+    }
     
     .c-me {
         width: 30%;
@@ -839,7 +787,7 @@ a {
     }
 
     .tb-btns-bx {
-        width: 100%;
+        width: 80%;
     }
 
 
@@ -859,9 +807,6 @@ a {
     width: 90%;
 }
 
-.tb-btns-bx {
-    width: 60%;
-}
 
 .tab-s {
     width: 100%;
@@ -919,7 +864,7 @@ a {
     
 }
 
-@media only screen and (max-device-width:500px) {
+@media only screen and (max-width:500px) {
     /* the heights used are specifically for iphone 6 */
     .v-c {
         padding: .5pc;
@@ -1005,7 +950,7 @@ a {
     }
 
     .c-me {
-        width: 70%;
+        width: 50%;
     }
 
     .my-img {
@@ -1122,7 +1067,7 @@ a {
 
 /* iphone 6 - Mozilla */
 
-@media only screen and (max-device-width:375px) {
+@media only screen and (max-width:375px) {
     /* the heights used are specifically for iphone 6 */
     .v-c {
         padding: .5pc;
@@ -1324,8 +1269,8 @@ a {
 }
 /* wearables */
 @media 
-  (max-device-width: 218px)
-  and (max-device-height: 281px) { 
+  (max-width: 218px)
+  and (max-height: 281px) { 
     /* the heights used are specifically for iphone 6 */
     .v-c {
         width: 100%;
